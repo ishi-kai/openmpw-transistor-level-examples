@@ -123,8 +123,6 @@ Vinp，Vinn が差動入力、Vout が出力電圧です。バイアス電流と
 - [DC解析 (diff_dc.sch)](./opamp/diff_dc.sch)
 ![DC解析 (diff_dc.sch)](./opamp/images/diff_dc.png)
 
-![DC解析 op](./opamp/images/diff_dc_op.png)
-
 ![差動増幅段入出力特性](./opamp/images/diff_dc_vout.png)
 
 
