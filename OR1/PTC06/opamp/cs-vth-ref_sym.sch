@@ -71,7 +71,7 @@ N 220 -340 220 -280 {
 lab=ib}
 N 220 -300 250 -300 {
 lab=ib}
-C {primitives/HR_poly.sym} 220 -100 0 0 {name=R2 model=R_poly W=1 L=1000}
+C {primitives/HR_poly.sym} 220 -100 0 0 {name=R2 model=R_poly W=1.2 L=1200}
 C {primitives/pfet.sym} 200 -390 0 0 {name=M4 
 model=pmos
 W=100u
