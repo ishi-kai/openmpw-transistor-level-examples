@@ -16,13 +16,9 @@ lab=vss}
 N 90 -180 90 -140 {
 lab=vss}
 N 220 -230 230 -230 {
-lab=#net1}
-N 230 -230 230 -190 {
-lab=#net1}
-N 220 -190 230 -190 {
-lab=#net1}
+lab=vss}
 N 100 -360 100 -340 {
-lab=#net2}
+lab=#net1}
 N 220 -70 220 -50 {
 lab=vss}
 N 100 -440 100 -420 {
@@ -56,22 +52,26 @@ lab=vss}
 N 90 -140 100 -140 {
 lab=vss}
 N 220 -200 220 -130 {
-lab=#net1}
-N 100 -230 180 -230 {
 lab=#net2}
-N 140 -180 220 -180 {
+N 100 -230 180 -230 {
 lab=#net1}
+N 140 -180 220 -180 {
+lab=#net2}
 N 220 -280 220 -260 {
 lab=ib}
 N 100 -280 100 -210 {
-lab=#net2}
+lab=#net1}
 N 100 -340 100 -280 {
-lab=#net2}
+lab=#net1}
 N 220 -340 220 -280 {
 lab=ib}
 N 220 -300 250 -300 {
 lab=ib}
-C {primitives/HR_poly.sym} 220 -100 0 0 {name=R2 model=R_poly W=1.2 L=1200}
+N 230 -230 230 -50 {
+lab=vss}
+N 220 -50 230 -50 {
+lab=vss}
+C {primitives/HR_poly.sym} 220 -100 0 0 {name=R2 model=R_poly W=2.0 L=2000}
 C {primitives/pfet.sym} 200 -390 0 0 {name=M4 
 model=pmos
 W=100u

@@ -20,13 +20,9 @@ lab=GND}
 N 90 -180 90 -140 {
 lab=GND}
 N 220 -230 230 -230 {
-lab=#net1}
-N 230 -230 230 -190 {
-lab=#net1}
-N 220 -190 230 -190 {
-lab=#net1}
+lab=GND}
 N 100 -360 100 -340 {
-lab=#net2}
+lab=#net1}
 N 220 -70 220 -50 {
 lab=GND}
 N 100 -440 100 -420 {
@@ -60,15 +56,19 @@ lab=GND}
 N 90 -140 100 -140 {
 lab=GND}
 N 220 -200 220 -130 {
-lab=#net1}
+lab=#net2}
 N 100 -230 180 -230 {
 lab=#net3}
 N 140 -180 220 -180 {
-lab=#net1}
+lab=#net2}
 N 220 -280 220 -260 {
 lab=#net4}
 N 100 -280 100 -210 {
 lab=#net3}
+N 230 -230 230 -50 {
+lab=GND}
+N 220 -50 230 -50 {
+lab=GND}
 C {devices/gnd.sym} 160 -30 0 0 {name=l1 lab=GND}
 C {devices/code_shown.sym} -230 -360 0 0 {name=control only_toplevel=false value=".control
 save all
@@ -88,7 +88,7 @@ C {devices/vdd.sym} 160 -460 0 0 {name=l4 lab=VDD}
 C {devices/ammeter.sym} 100 -310 0 0 {name=Vi1 savecurrent=true}
 C {devices/ammeter.sym} 220 -310 0 0 {name=Vi2 savecurrent=true}
 C {devices/lab_pin.sym} 170 -350 0 0 {name=p1 sig_type=std_logic lab=vb}
-C {primitives/HR_poly.sym} 220 -100 0 0 {name=R2 model=R_poly W=1.2 L=1200}
+C {primitives/HR_poly.sym} 220 -100 0 0 {name=R2 model=R_poly W=2.0 L=2000}
 C {primitives/pfet.sym} 200 -390 0 0 {name=M4 
 model=pmos
 W=100u

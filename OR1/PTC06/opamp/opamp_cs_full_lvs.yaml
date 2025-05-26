@@ -1,0 +1,5 @@
+---
+target: opamp_cs_full_lvs
+reference: lvs_work/opamp_cs_full_lvs_reference.cir.txt
+netlist: "/home/noritsuna/lecture/opamp/simulation/opamp_cs_full_lvs.spice"
+schematic: "/home/noritsuna/lecture/opamp/simulation/opamp_cs_full_lvs.spice"
