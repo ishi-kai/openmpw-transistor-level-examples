@@ -1,8 +1,9 @@
 #オペアンプと電流源設計してみよう
 [OpenRule1um PDK](https://github.com/ishi-kai/OpenRule1umPDK_setupEDA)の[PTC06 PDK](https://github.com/ishi-kai/OpenRule1umPDK_setupEDA?tab=readme-ov-file#%E3%83%95%E3%82%A7%E3%83%8B%E3%83%86%E3%83%83%E3%82%AF%E3%82%B7%E3%83%A3%E3%83%88%E3%83%ABpdk%E3%81%AE%E5%A0%B4%E5%90%88)向けに設計されています。
 
-# 共通
-## トランジスタの素性を調べる
+# 設計編（回路図とシミュレーション）
+## 共通
+### トランジスタの素性を調べる
 回路を作る前にトランジスタの素性を知っておく必要があります。アナログ回路設計で重要なのはドレイン電流 Id、しきい値電圧 Vth、相互コンダクタンス gm、出力抵抗 rds (1/gds)。まずはチャネル長 L を最小の 1 um、MOSのサイズはきりのいいところで W/L=10 にしておきましょう。  
 
 しきい値電圧はだいたい 0.8 V前後、ということはこのトランジスタのゲート-ソース間電圧はオーバードライブ100 mV ぐらいとして 0.9 Vぐらいが最も電流効率 (gm/Id) がよくなります。下図のように，オーバードライブはかけすぎると電流が大きくなる割に gm はそれほど増えないので効率が悪くなります。
@@ -84,8 +85,8 @@
 また、利得を稼ぎたいときは L を大きくすればよさそうということが分かります。  
 
 
-# オペアンプ
-## 全体の構成と設計目標
+## オペアンプ
+### 全体の構成と設計目標
 ここでは最も基本的な2段オペアンプを作ります。差動入力段 (初段) と増幅段 (2段目)、それに位相補償をかけます。  
 初段は rds が高く電流効率 (gm/Id) もよい pMOS、を使うことにします。そうすると差動段のテール電流源 (M5) は pMOSになるので、各段に電流を供給するカレントミラーは pMOS で構成することになります (M5, M6, M8, M9)。  
 ということで2段目はpMOSカレントミラーを負荷とする nMOS ソース接地増幅回路になります。回路図は下図です。差動増幅 (M1～M5)、ソース接地 (M6，M7) 以外にもいろいろトランジスタが使われていますが、これらは順を追って説明します。  
@@ -95,7 +96,7 @@ Vinp，Vinn が差動入力、Vout が出力電圧です。バイアス電流と
 ![2段オペアンプ回路図の図解](./opamp/images/2stage_opamp_sample_2.png)
 
 
-## 差動増幅段
+### 差動増幅段
 差動増幅段 (M1～M5) を設計します。カレントミラー (M3，M4) を能動負荷として使って利得を稼ぎつつ、オフセット除去もできる構成です。オフセット除去については次の節で説明します。
 
 この回路の利得は gmR=gm2(rds2∣∣rds4) です。トランジスタのサイズはバイアスなどを見ながら決めますが，例えばトランジスタの素性を調べた表より，L=2 μm のとき，同一バイアス・同一サイズで nMOS は pMOS の10倍の電流を流す能力があります。ということは，M1 と M3，M2 と M4 は同じ電流を流すわけなので pMOS (M1，M2) のサイズを nMOS (M3，M4) の10倍にすると両者のバイアスが同じになります。このとき利得はどうなるかというと，W/L=10 で正規化した pMOS のサイズを x とすると，nMOS のサイズは x/10 。この関係と表の数値より，利得 A は
@@ -126,11 +127,11 @@ Vinp，Vinn が差動入力、Vout が出力電圧です。バイアス電流と
 ![差動増幅段入出力特性](./opamp/images/diff_dc_vout.png)
 
 
-## ソース接地増幅段
+### ソース接地増幅段
 2段目は普通のソース接地増幅回路です。設計のポイントは，十分なスルーレートが得られるように大きな電流を流すこと，システマティックオフセットを0にすることです。
 
 
-### システマティックオフセットの除去
+#### システマティックオフセットの除去
 オペアンプは Vinp と Vinn の差分を増幅する回路です。つまり Vinp = Vinn であれば出力電流は0である必要があります。ここで Vinp = Vinn であるにも関わらず
 
 差動増幅段とソース接地増幅段を接続した回路図は下の通り。
@@ -164,7 +165,7 @@ I<sub>D5</sub>:I<sub>D6</sub>=W<sub>5</sub>:W<sub>6</sub> です。I<sub>D6</sub
 
 
 
-## 2段増幅
+### 2段増幅
 差動増幅段とソース接地増幅段を接続して利得がどのぐらい出るか確認します。
 
 - [差動段 + ソース接地 AC解析 (2stage_ac.sch)](./opamp/2stage_ac.sch)
@@ -181,12 +182,12 @@ I<sub>D5</sub>:I<sub>D6</sub>=W<sub>5</sub>:W<sub>6</sub> です。I<sub>D6</sub
 ![差動段 + ソース接地 位相曲線](./opamp/images/2stage_ac_phase.png)
 
 
-## 位相補償
+### 位相補償
 位相余裕がちょっとまずい数字になっているので，これを60度程度にするために位相補償をかけます。利得曲線・位相曲線から読み取れることは，単位利得周波数より低い位置に第2極がきており，そのため利得が0 dB になる前に位相が回ってしまっている，ということ。というわけで第1極と第2極を分離 (pole splitting) して第2極より先に利得を 0 dB に落とします。
 
 - ※ 極とか零点が何なのかをここで解説すると長くなるので，分からない人は教科書を読んでください…
 
-### ポールスプリッティング
+#### ポールスプリッティング
 差動増幅段の出力ノードの時定数を大きくすることで第1極を思いっきり下げます。そのためには容量を追加すればいいのですが、下図のようにソース接地増幅段の入出力をつなぐ形で位相補償容量 C<sub>c</sub> を挿入します。容量 C<sub>c</sub> はミラー効果によって差動増幅段からは (1+A)C<sub>c</sub> に見えます。今、ソース接地増幅段の利得は 19 dB (8.9倍) ですので、 C<sub>c</sub> は差動増幅段から見れば9.9倍に見え、第1極を大きく低周波側に下げることができます。
 
 ![位相補償容量](./opamp/images/phase_comp.webp)
@@ -203,7 +204,7 @@ I<sub>D5</sub>:I<sub>D6</sub>=W<sub>5</sub>:W<sub>6</sub> です。I<sub>D6</sub
 単位利得周波数は 5.5 MHz とほぼ半分に下がり、位相余裕は60度越えとなりました。問題なしです。ちなみに、容量C<sub>c</sub> を増やせば位相余裕をもっと増やせますが、それではよい過渡応答は得られません。C<sub>c</sub> を挿入したことで不安定零点が発生しているからです。これを何とかする必要があります。
 
 
-### 位相補償抵抗
+#### 位相補償抵抗
 説明をいろいろと端折りますが、零点の位置を制御するために直列に抵抗を挿入します。
 
 ![位相補償抵抗を追加](./opamp/images/phase_comp_reg.webp)
@@ -225,7 +226,7 @@ I<sub>D5</sub>:I<sub>D6</sub>=W<sub>5</sub>:W<sub>6</sub> です。I<sub>D6</sub
 
 
 
-### バイアスレプリカ
+#### バイアスレプリカ
 gm7 に連動して値が変わる抵抗とかそんな都合のいいものが作れるのか、という感じですが、これはMOSトランジスタの線形領域を使って作ります。回路図は下図。
 
 ![位相補償抵抗 (M12) を挿入](./opamp/images/phase_comp_mos.webp)
@@ -275,14 +276,14 @@ Vgs7 = Vb, Vgs12 = Vc − Vb ですから、 Vc = 2Vb となるように Vc を�
 ![位相補償 + バイアスレプリカ 過渡応答評価回路 op](./opamp/images/2stage_pc_tran_measure.png)
 
 
-## 完成，各種性能評価
+### 完成，各種性能評価
 あとは pMOSカレントミラーのゲート電圧を理想電圧源で固定していますので，これを電流源 + pMOS (M8) にします．これはただのカレントミラーなので適当に調整しましょう．特に大きいトランジスタを使う意味はないので，バイアスレプリカと同じサイズにしておきます．
 
 - [オペアンプ完成版](./opamp/opamp.sch)
 ![オペアンプ完成版](./opamp/images/opamp.png)
 
 
-### オープンループ特性
+#### オープンループ特性
 とりあえず利得と位相を確認しておきます．下図の回路ですが，Vinp，Vinn の与え方が変わっていることに注意してください．これまでは Vinn は固定電圧を与えていましたが，ここから先は出力電圧からバイアスを RCローパスフィルタで抜き出してきて Vinn に与えます．
 
 
@@ -296,7 +297,7 @@ Vgs7 = Vb, Vgs12 = Vc − Vb ですから、 Vc = 2Vb となるように Vc を�
 ![オペアンプ位相曲線](./opamp/images/opamp_ac_phase.png)
 
 
-### CMRR
+#### CMRR
 同相信号除去比 CMRR (Common-Mode Rejection Ratio) は差動利得と同相利得の比です．オペアンプは入力端子間の差だけを増幅するのが理想なので，同相信号に対してはまったく反応しない (利得 0倍， −∞ dB) ことが理想です．が，実際には同相信号もある程度は増幅してしまうので，その度合いを表すのが CMRR です．差動利得を A<sub>D</sub>  ，同相利得を A<sub>C</sub> として
 
 ![CMRRの式](./opamp/images/cmrr.png)
@@ -311,7 +312,7 @@ Vgs7 = Vb, Vgs12 = Vc − Vb ですから、 Vc = 2Vb となるように Vc を�
 同相利得 (青線) はさすがに 0 dB は超えませんが，そこそこ大きい値になっており CMRR は 100 dB．そんなにいい値ではありません．これは主に差動増幅段のテール電流源が弱い (出力抵抗が小さい) ことなどが原因です．
 
 
-### 温度解析
+#### 温度解析
 温度 (T) も変えて評価しましょう．
 
 - [オペアンプ温度AC解析 (opamp_ac_temp.sch)](./opamp/opamp_ac_temp.sch)
@@ -322,11 +323,11 @@ Vgs7 = Vb, Vgs12 = Vc − Vb ですから、 Vc = 2Vb となるように Vc を�
 
 
 
-# 電流源
+## 電流源
 トランジスタはそもそも電流源です。BJTであればベース電流で制御される電流制御電流源、MOSFET であればゲート-ソース間電圧で制御される電圧制御電流源と見なすことができます。ということは制御電流/制御電圧を一定にすればトランジスタは定電流源になるはず。その制御電圧を生成して電流をコピーするのがおなじみカレントミラーです。  
 しかし、OR1にはBJTはありません。BJTなしの定電流源を作ります。  
 
-## 基本電流源
+### 基本電流源
 電流を作るもっとも安直な方法は抵抗を使うことです。
 
 - [基本電流源回路](./current-source/cs-basic.sch)
@@ -344,7 +345,7 @@ Vgs7 = Vb, Vgs12 = Vc − Vb ですから、 Vc = 2Vb となるように Vc を�
 -50℃～125℃でだいたい半分ぐらい変わっています。
 
 
-## Vth-referenced 自己バイアス電流源
+### Vth-referenced 自己バイアス電流源
 電圧に依存しない電流を作る方法として、Vth-referenced 自己バイアス回路というものがあります。
 
 - [Vth-referenced 自己バイアス回路](./current-source/cs-vth-ref.sch)
@@ -362,11 +363,11 @@ i2 は電源電圧に対して安定しており、変動は0.5%以下になっ�
 
 
 
-# オペアンプ＋電流源
-## 電流源の使い方
+## オペアンプ＋電流源
+### 電流源の使い方
 前節までで電流源回路ができたわけですが、これどうやって使うの？ と思う人も多いのではないかと思います。それもそのはずで、電流源回路、ある意味で名前に偽りがあります。その辺を説明します。
 
-### 電流源回路と電流源記号
+#### 電流源回路と電流源記号
 回路素子で電流源と言えば下の記号
 
 ![xschem の電流源 （isource）](./current-source/images/isource.webp)
@@ -380,7 +381,7 @@ i2 は電源電圧に対して安定しており、変動は0.5%以下になっ�
 ![電流源回路の担当部分](./current-source/images/usege_cs_cm.webp)
 
 
-### つなぎ方の例
+#### つなぎ方の例
 具体的に使い方の例を示します。下図のように、アクティブ負荷を持つソース接地増幅回路があったとします。この回路は設計段階では理想電流源を使ってカレントミラーでアクティブ負荷を作ってシミュレーションしました。これを電流源回路と結合します。
 
 
@@ -408,14 +409,14 @@ i2 は電源電圧に対して安定しており、変動は0.5%以下になっ�
 まず pMOSカレントミラーで XM7 を電流源として動かし、その電流を ダイオード接続された XM8 に流すことで nMOSゲート電圧を作っています。あとはその電圧を XM1 に渡せば、XM1 が電流源としてはたらくという仕組みです。
 
 
-## オペアンプに電流源を接続する
+### オペアンプに電流源を接続する
 前節の内容に従って、電流源をオペアンプに接続して、各種性能評価をします。
 
 - [オペアンプ＋電流源回路](./opamp/opamp_cs.sch)
 ![オペアンプ＋電流源回路](./opamp/images/opamp_cs.png)
 
 
-### オープンループ特性
+#### オープンループ特性
 - [オペアンプAC解析 (opamp_cs_ac_temp.sch)](./opamp/opamp_cs_ac.sch)
 ![オペアンプAC解析 (opamp_cs_ac_temp.sch)](./opamp/images/opamp_cs_ac.png)
 ![オペアンプのop](./opamp/images/opamp_cs_ac_measure.png)
@@ -423,14 +424,14 @@ i2 は電源電圧に対して安定しており、変動は0.5%以下になっ�
 ![オペアンプ位相曲線](./opamp/images/opamp_cs_ac_phase.png)
 
 
-### CMRR
+#### CMRR
 - [CMRR評価回路 (opamp_cs_cmrr.sch)](./opamp/opamp_cs_cmrr.sch)
 ![CMRR評価回路 (opamp_cs_cmrr.sch)](./opamp/images/opamp_cs_cmrr.png)
 ![CMRR評価回路のop](./opamp/images/opamp_cs_cmrr_measure.png)
 ![CMRR評価結果](./opamp/images/opamp_cs_cmrr_output.png)
 
 
-### 温度解析
+#### 温度解析
 - [オペアンプ温度AC解析 (opamp_cs_ac_temp.sch)](./opamp/opamp_cs_ac_temp.sch)
 ![オペアンプ温度AC解析 (opamp_cs_ac_temp.sch)](./opamp/images/opamp_cs_ac_temp.png)
 ![オペアンプ温度のop](./opamp/images/opamp_cs_ac_temp_measure.png)
@@ -441,10 +442,66 @@ i2 は電源電圧に対して安定しており、変動は0.5%以下になっ�
 問題はないようなので、これで完成です。
 
 
+# レイアウト編
+## schematic to placeレイアウト
+まずは、基本として「schematic to placeレイアウト」という回路図の見た目をそのままレイアウトにする方法でレイアウトしてみます。  
+レイアウトテクニックとしては、フィンガーのみを使用しています。より高度なレイアウトテクニックはこの後に記載していきます。  
+- フィンガーについては[Open Source Silicon Magazine Vol.1 ーはじめてのIC設計ー](https://techbookfest.org/product/3W7W1ukgkMrX6ENeBJaaYn)をご覧ください
+
+これまで設計したオペアンプの回路図は部品単位で設計されていますので、まずは、1つの回路図に全て集約します。
+
+- [集約したオペアンプ (opamp_cs_full.sch)](./opamp/opamp_cs_full.sch)
+![集約したオペアンプ (opamp_cs_full.sch)](./opamp/images/opamp_cs_full.png)
+![オペアンプのschematic to placeレイアウト](./opamp/images/opamp_cs_schem2place_layout.png)
+
+schematic to placeレイアウトですので、回路図の配置そのままのレイアウトになります。
+
+
+### DRC
+DRCを実行します。下図のようにオールグリーンとなればOKです。  
+
+![schematic to place版のDRC](./opamp/images/opamp_cs_schem2place_drc.png)
+
+
+### LVS
+LVS機能の一部にバグがあるようですので、修正されるまで下記の対応をお願いします。  
+
+#### PDKバグ対応：抵抗やキャパシタの認識
+LVSを実行します。しかし、下記のようなエラーが出ます。どうやら、PDKのLVS機能がxscheｍのPoly_resシンボルやPoly_capシンボルを認識できないようです。  
+
+![エラーメッセージ](./opamp/images/opamp_cs_schem2place_lvs_reg_ng.png)
+
+そこで、回路図のPoly_resシンボルやPoly_capシンボルをxschemの標準部品のPresシンボルやcapaシンボルに変更します。(下図の赤丸内)  
+
+- [シンボルを変更した回路図 (opamp_cs_full_lvs.sch)](./opamp/opamp_cs_full_lvs.sch)
+![シンボルを変更した回路図 (opamp_cs_full_lvs.sch)](./opamp/images/opamp_cs_schem2place_xschem_lvs.png)
+
+
+#### PDKバグ対応：Pdiff_cap, Ndiff_capの認識
+上記の修正をしても、まだ、LVSでエラーが出ます。これは、PDKがP-CellのPdiff_cap, Ndiff_capの接続関係をうまく認識できていないことが原因です。  
+
+![capの接続エラー](./opamp/images/opamp_cs_schem2place_lvs_ng.png)
+
+そこで、一時的にPoly_capに置き換えて、LVSを実行してください。(下図の赤丸内)  
+オールグリーンになればOKです。  
+
+- [capを変更したレイアウト (opamp_cs_full_lvs.gds)](./opamp/opamp_cs_full_lvs.gds)
+![capを変更したレイアウト (opamp_cs_full_lvs.gds)](./opamp/images/opamp_cs_schem2place_layout_lvs.png)
+![LVS OK](./opamp/images/opamp_cs_schem2place_lvs_ok.png)
+
+
+## 各種レイアウトテクニック
+これ以降は、各種レイアウトテクニックを解説します。自分の設計に適しなものをご利用ください。  
+
+### Cell（セル）単位でのレイアウト
+
+
+
+
 # 出典
 土谷先生のGF180による[OPAMPサンプル](https://note.com/akira_tsuchiya/n/n710ed2d0e428)と[CSサンプル](https://note.com/akira_tsuchiya/n/n307d76106a86)_を[OpenRule1um PDK](https://github.com/ishi-kai/OpenRule1umPDK_setupEDA)の[PTC06 PDK](https://github.com/ishi-kai/OpenRule1umPDK_setupEDA?tab=readme-ov-file#%E3%83%95%E3%82%A7%E3%83%8B%E3%83%86%E3%83%83%E3%82%AF%E3%82%B7%E3%83%A3%E3%83%88%E3%83%ABpdk%E3%81%AE%E5%A0%B4%E5%90%88)向けに書き直したものです。
 
-## ライセンス
+# ライセンス
 SPDX-License-Identifier: Apache-2.0 
 
 Copyright 2024 Noritsuna IMAMURA
