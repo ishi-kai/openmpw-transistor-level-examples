@@ -464,30 +464,9 @@ DRCを実行します。下図のようにオールグリーンとなればOKで
 
 
 ### LVS
-LVS機能の一部にバグがあるようですので、修正されるまで下記の対応をお願いします。  
+LVSを実行します。下図のようにオールグリーンとなればOKです。  
 
-#### PDKバグ対応：抵抗やキャパシタの認識
-LVSを実行します。しかし、下記のようなエラーが出ます。どうやら、PDKのLVS機能がxscheｍのPoly_resシンボルやPoly_capシンボルを認識できないようです。  
-
-![エラーメッセージ](./opamp/images/opamp_cs_schem2place_lvs_reg_ng.png)
-
-そこで、回路図のPoly_resシンボルやPoly_capシンボルをxschemの標準部品のPresシンボルやcapaシンボルに変更します。(下図の赤丸内)  
-
-- [シンボルを変更した回路図 (opamp_cs_full_lvs.sch)](./opamp/opamp_cs_full_lvs.sch)
-![シンボルを変更した回路図 (opamp_cs_full_lvs.sch)](./opamp/images/opamp_cs_schem2place_xschem_lvs.png)
-
-
-#### PDKバグ対応：Pdiff_cap, Ndiff_capの認識
-上記の修正をしても、まだ、LVSでエラーが出ます。これは、PDKがP-CellのPdiff_cap, Ndiff_capの接続関係をうまく認識できていないことが原因です。  
-
-![capの接続エラー](./opamp/images/opamp_cs_schem2place_lvs_ng.png)
-
-そこで、一時的にPoly_capに置き換えて、LVSを実行してください。(下図の赤丸内)  
-オールグリーンになればOKです。  
-
-- [capを変更したレイアウト (opamp_cs_full_lvs.gds)](./opamp/opamp_cs_full_lvs.gds)
-![capを変更したレイアウト (opamp_cs_full_lvs.gds)](./opamp/images/opamp_cs_schem2place_layout_lvs.png)
-![LVS OK](./opamp/images/opamp_cs_schem2place_lvs_ok.png)
+![LVS OK](./opamp/images/opamp_cs_schem2place_lvs.png)
 
 
 ## 各種レイアウトテクニック
