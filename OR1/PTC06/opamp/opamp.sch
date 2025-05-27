@@ -135,7 +135,6 @@ W=20u
 L=2u
 m=1
 }
-C {primitives/Poly_cap.sym} 470 -290 1 0 {name=C1 model=poly_cap W=18 L=18}
 C {primitives/nfet.sym} 390 -310 1 0 {name=M2 
 model=nmos
 W=40u
@@ -160,3 +159,4 @@ W=10u
 L=2u
 m=1
 }
+C {primitives/Pdiff_cap.sym} 470 -290 1 0 {name=C2 model=Pdiff_cap W=18 L=10}

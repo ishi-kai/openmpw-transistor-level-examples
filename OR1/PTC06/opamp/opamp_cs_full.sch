@@ -326,19 +326,19 @@ C {devices/iopin.sym} 880 -20 0 0 {name=p6 lab=vss}
 C {primitives/pfet.sym} -70 -400 0 1 {name=M3 
 model=pmos
 W=20u
-L=2u
+L=10
 m=1
 }
 C {primitives/nfet.sym} 630 -310 1 0 {name=M2 
 model=nmos
 W=40u
-L=2u
+L=10
 m=1
 }
 C {primitives/pfet.sym} 50 -400 0 0 {name=M6
 model=pmos
 W=20u
-L=2u
+L=10
 m=1
 }
 C {primitives/nfet.sym} 50 -150 0 0 {name=M1 
@@ -356,19 +356,19 @@ m=1
 C {primitives/pfet.sym} -260 -390 0 0 {name=M4 
 model=pmos
 W=20u
-L=2u
+L=10
 m=1
 }
 C {primitives/nfet.sym} -220 -280 0 1 {name=M5 
 model=nmos
 W=5u
-L=2u
+L=10
 m=1
 }
 C {primitives/nfet.sym} -110 -280 0 0 {name=M8 
 model=nmos
 W=5u
-L=2u
+L=10
 m=1
 }
 C {primitives/HR_poly.sym} -470 -110 0 0 {name=R2 model=HR_poly W=2.0 L=2000}
@@ -401,7 +401,7 @@ C {devices/ipin.sym} 530 -240 0 1 {name=p3 lab=vinp}
 C {primitives/pfet.sym} 330 -400 0 0 {name=M13 
 model=pmos
 W=40u
-L=2u
+L=10
 m=1
 }
 C {primitives/pfet.sym} 230 -240 0 0 {name=M14 
@@ -441,4 +441,4 @@ W=200u
 L=2u
 m=1
 }
-C {primitives/Pdiff_cap.sym} 710 -290 1 0 {name=C2 model=Pdiff_cap W=18 L=18}
+C {primitives/Pdiff_cap.sym} 710 -290 1 0 {name=C2 model=Pdiff_cap W=18 L=10}
