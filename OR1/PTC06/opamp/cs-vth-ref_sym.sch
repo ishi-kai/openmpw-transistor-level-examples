@@ -71,7 +71,7 @@ N 230 -230 230 -50 {
 lab=vss}
 N 220 -50 230 -50 {
 lab=vss}
-C {primitives/HR_poly.sym} 220 -100 0 0 {name=R2 model=R_poly W=2.0 L=2000}
+C {primitives/HR_poly.sym} 220 -100 0 0 {name=R2 model=HR_poly W=2.0 L=2000}
 C {primitives/pfet.sym} 200 -390 0 0 {name=M4 
 model=pmos
 W=100u

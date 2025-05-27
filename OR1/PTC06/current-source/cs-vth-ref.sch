@@ -88,7 +88,7 @@ C {devices/vdd.sym} 160 -460 0 0 {name=l4 lab=VDD}
 C {devices/ammeter.sym} 100 -310 0 0 {name=Vi1 savecurrent=true}
 C {devices/ammeter.sym} 220 -310 0 0 {name=Vi2 savecurrent=true}
 C {devices/lab_pin.sym} 170 -350 0 0 {name=p1 sig_type=std_logic lab=vb}
-C {primitives/HR_poly.sym} 220 -100 0 0 {name=R2 model=R_poly W=2.0 L=2000}
+C {primitives/HR_poly.sym} 220 -100 0 0 {name=R2 model=HR_poly W=2.0 L=2000}
 C {primitives/pfet.sym} 200 -390 0 0 {name=M4 
 model=pmos
 W=100u
