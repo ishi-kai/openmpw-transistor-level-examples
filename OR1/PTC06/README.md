@@ -473,15 +473,130 @@ LVSを実行します。下図のようにオールグリーンとなればOKで
 これ以降は、各種レイアウトテクニックを解説します。自分の設計に適しなものをご利用ください。  
 
 ### Cell（セル）単位でのレイアウト
+Cell≒部品化手法です。  
+今回の回路図は、差動増幅段やソース接地増幅段など部品単位で分かれていますが、レイアウト編では全て展開してレイアウトしました。実は、これはよくありません。なぜかといえば、部品単位のままであれば、部品単位で性能の調整が出来るためです。  
+さらに、このあとの解説にあるアレイを利用する場合も、セルを編集するだけでコピーしたものが一括で変更されるため、重要なテクニックの一つとなります。  
 
 
+差動増幅段をセル化してみます。要は、普通にレイアウトをして、トップセル名をデフォルトの「TOP」から「diff」などの任意の名前として保存します。これでOKです。  
+（一つのレイアウト内にセルを作る方法もあります。）  
+
+- [差動増幅段 (diff.sch)](./opamp/diff.sch)
+![差動増幅段 (diff.sch)](./opamp/images/diff.png)
+
+- [差動増幅段 のレイアウト(diff.gds)](./opamp/diff.gds)
+![差動増幅段 のレイアウト(diff.gds)](./opamp/images/diff_layout.png)
+
+
+#### Cell（セル）のインポート
+作ったセルを他のレイアウトにインポートするには下記のようにしてください。  
+
+![セルのインポート 1](./opamp/images/cell_import_01.png)
+![セルのインポート 2](./opamp/images/cell_import_02.png)
+![セルのインポート 3](./opamp/images/cell_import_03.png)
+![セルのインポート 4](./opamp/images/cell_import_04.png)
+
+
+#### Cell（セル）の使い方
+インポートしたセルを利用する方法は下記のようにしてください。  
+
+![セルの使い方 1](./opamp/images/cell_use_01.png)
+![セルの使い方 2](./opamp/images/cell_use_02.png)
+![セルの使い方 3](./opamp/images/cell_use_03.png)
+
+
+### VDD/VSSセル
+半導体版のパスコン的な手法の一つです。  
+メタル層を2層重ねて、それぞれの層をVDD ,VSSにして、平行平板コンデンサにして利用するという手法です。  
+問題点は、OR1ではメタル層は3層しか無いため、VDDやVSSがショートしないようにしつつ、出力ポートで分断が起きないように細心の注意が必要です。  
+
+- [パスコンレイアウトの例(pass_cap.gds)](./opamp/pass_cap.gds)
+![パスコンレイアウトの例(pass_cap.gds)](./opamp/images/pass_cap_cell.png)
+- [パスコンを追加した差動増幅段 レイアウト(diff_pass_cap.gds)](./opamp/diff_pass_cap.gds)
+![パスコンを追加した差動増幅段 レイアウト(diff_pass_cap.gds)](./opamp/images/diff_pass_cap.png)
+
+
+#### アレイの使い方
+パスコンセルを一つずつ配置するのは大変です。そこで、「array」というコピー機能が用意されていますので、それを使って配置します。  
+下図の使い方は、ガードリングを配置するときの例です。  
+
+![アレイ配置の使い方 1](./opamp/images/diff_gr_array_01.png)
+![アレイ配置の使い方 2](./opamp/images/diff_gr_array_02.png)
+![アレイ配置の使い方 3](./opamp/images/diff_gr_array_03.png)
+
+
+### ダミーポリシリコン
+バラツキを軽減する手法の一つです。  
+P型FETやN型FETのポリシリコン部は、フィンガーのように近くにポリシリコンがある場合と何もない場合では製造時に削れる量に差が出ます。そのため、フィンガーが左右の端にあるポリシリコンと内側にあるポリシリコンでは削れる量に差が出てしまい、それがそのまま特性バラツキとなってしまいます。  
+そこで、ダミーのポリシリコンで挟み込むことで**削れる量を一定**にするという手法です。  
+
+- [N-FETのダミーポリシリコンの例(N-FET W=10 両側用)](./opamp/dummy_poly_nfet_10.gds)
+- [N-FETのダミーポリシリコンの例(P-FET W=10 左側用)](./opamp/dummy_poly_pfet_10_L.gds)
+- [N-FETのダミーポリシリコンの例(P-FET W=10 右側用)](./opamp/dummy_poly_pfet_10_R.gds)
+- [N-FETのダミーポリシリコンの例(P-FET W=20 左側用)](./opamp/dummy_poly_pfet_20_L.gds)
+- [N-FETのダミーポリシリコンの例(P-FET W=20 右側用)](./opamp/dummy_poly_pfet_20_R.gds)
+![N-FETのダミーポリシリコンの例](./opamp/images/dummy_poly_nfet_10_layout.png)
+
+- [ダミーポリシリコンを追加した差動増幅段 レイアウト(diff_dp.gds)](./opamp/diff_dp.gds)
+![ダミーポリシリコンを追加した差動増幅段 レイアウト(diff_dp.gds)](./opamp/images/diff_dp_layout.png)
+![元の差動増幅段 のレイアウト(diff.gds)](./opamp/images/diff_layout.png)
+
+問題点は、このままではLVSに通りません。なぜかといえば、ダミーシリコン部もFETの一部として認識されてしまうためです。  
+そこで、ダミーシリコンに相当するFETを回路図に追加することが必要です。  
+
+- [ダミーポリシリコンを追加した差動増幅段 回路図(diff_dp.sch)](./opamp/diff_dp.sch)
+![ダミーポリシリコンを追加した差動増幅段 回路図(diff_dp.sch)](./opamp/images/diff_dp_xschem.png)
+![元の差動増幅段 の回路図(diff.sch)](./opamp/images/diff.png)
+
+
+### コモンセントロイド
+温度特性をよくする手法の一つです。  
+差動増幅段のように対となるFETがセットで使われている場合に、点対称にレイアウトを配置する手法です。これにより、「コモンセントロイド化した差動増幅段の図」の上や右に熱源があった場合に、AとBが同じ温度勾配となるため、温度特性が良くなるという手法です。  
+問題点は、配線が複雑になるため、OR1のようにメタル層が3層しかない場合、配線が大変になってしまう点です。  
+
+![コモンセントロイドのターゲット 回路図](./opamp/images/diff_cc_str.png)
+![コモンセントロイドのターゲット レイアウト](./opamp/images/diff_cc_str_layout.png)
+![コモンセントロイド前の差動増幅段 FETの配置](./opamp/images/diff_cc_str_man_01.png)
+![コモンセントロイド化した差動増幅段 FETの配置](./opamp/images/diff_cc_str_man_02.png)
+
+- [コモンセントロイド化した差動増幅段(diff_cc.gds)](./opamp/diff_cc.sch)
+![コモンセントロイド化した差動増幅段](./opamp/images/diff_cc_layout.png)
+
+
+### ガードリング
+ノイズ対策手法の一つです。  
+やり方としては、比較的簡単でVSSに落とすpsubcontでFETなどを囲うだけです。  
+ノイズ源を見極めて、分離すべき箇所を囲うことでより効果的になります。下図では、作動増幅段はBody電圧がVDDではなく、カレントミラーからの供給となっているため、独立してガードリングをつけています。  
+
+- [ガードリングをつけた差動増幅段(diff_gr.gds)](./opamp/diff_gr.sch)
+![ガードリングをつけた差動増幅段](./opamp/images/diff_gr_layout.png)
+
+
+### ダブルVIA/コンタクト
+製造不良・故障対策・特性向上手法の一つです。  
+VIAはメタル層間を、コンタクトはポリシリコンなど基板系と繋げるためのものです。  
+これらは、非常に微細のため、製造工程で詰まって、接触不良を起こすことがあります。そこで、2つ以上のVIA/コンタクトをつけることで、製造不良対策をする手法です。  
+この他にも、VIA/コンタクトは抵抗値が高いため、1つだと特性に影響が出る場合もあります。その場合は、必要な抵抗値となるようにVIA/コンタクトを追加する必要があります。また、コンタクトの抵抗値が高すぎる場合、溶けて、メタルと基板（シリコン）が溶けて混ざり合金となって、故障する場合もあります。  
+
+- [ダブルVIA/コンタクト化した差動増幅段(diff_gr.gds)](./opamp/diff_via.sch)
+![ダブルVIA/コンタクト化した差動増幅段](./opamp/images/diff_via_layout.png)
+
+
+### ESD
+故障対策手法の一つです。  
+半導体は、非常に薄い膜（数百ナノメートル）で絶縁されています。そのため、非常に絶縁耐性が低く、特にゲート端子は絶縁破壊による故障を起こしやすいです。  
+そこで、外界と接続しなければならない端子にはESD対策を施すことが一般的です。ただし、ISHI会においては会の方からフレームという形で提供されるため、意識する必要がありません。  
+ただし、OR1ではありませんが、レイアウトエラーでよく出るアンテナルール（＝長いメタル配線をするとそこに電荷が溜まって同じように絶縁破壊が起きる現象）も同じ原理に基づくものとなります。対策としては、メタル配線を短くするか、ESDと同じでダイオードをつけて高電圧になった場合にVSSに落とすなどとなります。  
+
+![ESD対策されたPad付きのフレーム](./opamp/images/top_frame.png)
 
 
 # 出典
 土谷先生のGF180による[OPAMPサンプル](https://note.com/akira_tsuchiya/n/n710ed2d0e428)と[CSサンプル](https://note.com/akira_tsuchiya/n/n307d76106a86)_を[OpenRule1um PDK](https://github.com/ishi-kai/OpenRule1umPDK_setupEDA)の[PTC06 PDK](https://github.com/ishi-kai/OpenRule1umPDK_setupEDA?tab=readme-ov-file#%E3%83%95%E3%82%A7%E3%83%8B%E3%83%86%E3%83%83%E3%82%AF%E3%82%B7%E3%83%A3%E3%83%88%E3%83%ABpdk%E3%81%AE%E5%A0%B4%E5%90%88)向けに書き直したものです。
 
-# ライセンス
-SPDX-License-Identifier: Apache-2.0 
 
-Copyright 2024 Noritsuna IMAMURA
-Copyright 2023 Akira Tsuchiya (atuchiya)
+# ライセンス
+SPDX-License-Identifier: Apache-2.0  
+
+- Copyright 2024 Noritsuna IMAMURA
+- Copyright 2023 Akira Tsuchiya (atuchiya)
