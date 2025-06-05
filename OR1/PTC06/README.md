@@ -8,7 +8,9 @@
 
 しきい値電圧はだいたい 0.8 V前後、ということはこのトランジスタのゲート-ソース間電圧はオーバードライブ100 mV ぐらいとして 0.9 Vぐらいが最も電流効率 (gm/Id) がよくなります。下図のように，オーバードライブはかけすぎると電流が大きくなる割に gm はそれほど増えないので効率が悪くなります。
 
+![nMOS の gm/Id Vgs回路図とシミュレーション](./opamp/images/nfet_idvgs.png)
 ![nMOS の gm/Id．横軸は Vgs](./opamp/images/nfet_idvgs_gm_ivds.png)
+![pMOS の gm/Id Vgs回路図とシミュレーション](./opamp/images/pfet_idvgs.png)
 ![pMOS の gm/Id．横軸は Vgs](./opamp/images/pfet_idvgs_gm_ivds.png)
 
 
