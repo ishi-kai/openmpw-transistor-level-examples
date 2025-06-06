@@ -12,11 +12,11 @@ lab=#net1}
 N 260 -120 380 -120 {
 lab=#net1}
 N 220 -90 220 -60 {
-lab=vss}
+lab=vdd}
 N 220 -60 420 -60 {
-lab=vss}
+lab=vdd}
 N 420 -90 420 -60 {
-lab=vss}
+lab=vdd}
 N 220 -180 320 -180 {
 lab=#net1}
 N 320 -180 320 -120 {
@@ -28,7 +28,7 @@ lab=#net2}
 N 320 -320 320 -290 {
 lab=#net2}
 N 320 -60 320 -30 {
-lab=vss}
+lab=vdd}
 N 320 -400 320 -380 {
 lab=vdd}
 N 250 -350 280 -350 {
@@ -44,17 +44,17 @@ lab=vdd}
 N 320 -390 340 -390 {
 lab=vdd}
 N 210 -120 220 -120 {
-lab=vss}
+lab=vdd}
 N 210 -120 210 -80 {
-lab=vss}
+lab=vdd}
 N 210 -80 220 -80 {
-lab=vss}
+lab=vdd}
 N 420 -120 430 -120 {
-lab=vss}
+lab=vdd}
 N 430 -120 430 -80 {
-lab=vss}
+lab=vdd}
 N 420 -80 430 -80 {
-lab=vss}
+lab=vdd}
 N 220 -240 230 -240 {
 lab=#net2}
 N 230 -280 230 -240 {
@@ -72,7 +72,7 @@ lab=vinn}
 N 460 -240 500 -240 {
 lab=vinp}
 N 320 -30 320 -20 {
-lab=vss}
+lab=vdd}
 N 320 -450 320 -400 {
 lab=vdd}
 N 20 -180 20 -140 {
@@ -80,33 +80,33 @@ lab=#net1}
 N 20 -180 220 -180 {
 lab=#net1}
 N -40 -110 20 -110 {
-lab=vss}
+lab=vdd}
 N -40 -110 -40 -40 {
-lab=vss}
+lab=vdd}
 N -40 -40 320 -40 {
-lab=vss}
+lab=vdd}
 N 560 -110 610 -110 {
-lab=vss}
+lab=vdd}
 N 610 -110 610 -40 {
-lab=vss}
+lab=vdd}
 N 320 -40 610 -40 {
-lab=vss}
+lab=vdd}
 N 80 -110 100 -110 {
-lab=vss}
+lab=vdd}
 N 80 -110 80 -40 {
-lab=vss}
+lab=vdd}
 N 690 -160 690 -140 {
 lab=out}
 N 690 -110 710 -110 {
-lab=vss}
+lab=vdd}
 N 710 -110 710 -40 {
-lab=vss}
+lab=vdd}
 N 610 -40 710 -40 {
-lab=vss}
+lab=vdd}
 N 100 -80 100 -40 {
-lab=vss}
+lab=vdd}
 N 560 -80 560 -40 {
-lab=vss}
+lab=vdd}
 N 100 -160 100 -140 {
 lab=#net3}
 N 100 -170 560 -170 {
@@ -175,6 +175,34 @@ N 10 -300 630 -300 {
 lab=#net4}
 N 630 -300 630 -280 {
 lab=#net4}
+N 480 -410 650 -410 {
+lab=vdd}
+N 60 -410 140 -410 {
+lab=vdd}
+N 80 -410 80 -360 {
+lab=vdd}
+N 540 -410 540 -360 {
+lab=vdd}
+N -140 -410 60 -410 {
+lab=vdd}
+N -140 -410 -140 -250 {
+lab=vdd}
+N 650 -410 770 -410 {
+lab=vdd}
+N 770 -410 770 -250 {
+lab=vdd}
+N -30 -410 -30 -250 {
+lab=vdd}
+N 670 -410 670 -250 {
+lab=vdd}
+N 650 -110 650 -40 {
+lab=vdd}
+N 520 -110 520 -40 {
+lab=vdd}
+N 140 -110 140 -40 {
+lab=vdd}
+N 60 -110 60 -40 {
+lab=vdd}
 C {devices/ipin.sym} 150 -240 0 0 {name=p9 lab=vinn}
 C {devices/ipin.sym} 500 -240 0 1 {name=p5 lab=vinp}
 C {devices/ipin.sym} 250 -350 0 0 {name=p2 lab=vb}
