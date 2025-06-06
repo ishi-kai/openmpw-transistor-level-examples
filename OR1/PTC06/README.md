@@ -554,6 +554,7 @@ P型FETやN型FETのポリシリコン部は、フィンガーのように近く
 
 問題点は、このままではLVSに通りません。なぜかといえば、ダミーポリシリコン部もFETの一部として認識されてしまうためです。  
 そこで、ダミーポリシリコンに相当するFETを回路図に追加することが必要です。  
+しかも、これでも完全体ではありません。本設計では、ゲートにVDDやVSSを直結していますが、[TIE回路](https://github.com/gc-na/gc-na.github.io/blob/master//wiki/tie-cell_japanese.md)を経由して接続すべきです。  
 
 - [ダミーポリシリコンを追加した差動増幅段 回路図(diff_dp.sch)](./opamp/diff_dp.sch)
 ![ダミーポリシリコンを追加した差動増幅段 回路図(diff_dp.sch)](./opamp/images/diff_dp_xschem.png)
