@@ -1,5 +1,11 @@
-#オペアンプと電流源設計してみよう
+# オペアンプと電流源設計してみよう
 [OpenRule1um PDK](https://github.com/ishi-kai/OpenRule1umPDK_setupEDA)の[PTC06 PDK](https://github.com/ishi-kai/OpenRule1umPDK_setupEDA?tab=readme-ov-file#%E3%83%95%E3%82%A7%E3%83%8B%E3%83%86%E3%83%83%E3%82%AF%E3%82%B7%E3%83%A3%E3%83%88%E3%83%ABpdk%E3%81%AE%E5%A0%B4%E5%90%88)向けに設計されています。
+
+## ドキュメント
+下記の資料をプレゼン形式にまとめたバージョンです。一部の用語などより詳細に解説しています。  
+
+![OR1版OPAMP解説書](./docs/OPAMP_OR1.pdf)
+
 
 # 設計編（回路図とシミュレーション）
 ## 共通
