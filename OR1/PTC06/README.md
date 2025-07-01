@@ -599,6 +599,14 @@ P型FETやN型FETのポリシリコン部は、フィンガーのように近く
 ![ガードリングをつけた差動増幅段](./opamp/images/diff_gr_layout.png)
 
 
+#### N-Well電位
+N-Well（緑の点々のエリア）が広い場合、nsubcontが少ないと電位が場所によって安定しない場合があります。  
+そこで、nsubcontでN-Wellを囲ったり、四隅に置くことで対策を行う手法です。
+
+- [一部にN-Wellタップを追加した差動増幅段(diff_gr_tap.gds)](./opamp/diff_gr_tap.sch)
+![一部にN-Wellタップを追加した差動増幅段](./opamp/images/nwell_vol.png)
+
+
 ### ダブルVIA/コンタクト
 製造不良対策・故障対策・特性向上手法の一つです。  
 VIAはメタル層間を、コンタクトはポリシリコンなど基板系と繋げるためのものです。  
