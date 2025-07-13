@@ -89,7 +89,7 @@ set units=degree
 op
 show m
 save all
-dc Vin 1.0 2.6 0.01
+dc Vin 1.0 4.0 0.01
 plot i(Vi1)
 .endc"}
 C {devices/code.sym} -800 -310 0 0 {name=PTC06_MODELS
