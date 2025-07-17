@@ -33,6 +33,6 @@ OPAMPを設計するための最低限を解説をした資料です。
 ## 詳細解説資料
 上記の設計資料をより詳細に解説した資料です。  
 上記の設計資料では、どうしてそのような設計をするのか？や計算になるのかはほとんど解説されていませんので、それを補強する資料となります。  
-- [OR1版OPAMP解説書:PDF版](./docs/OPAMP_OR1.pdf)
-- [OR1版OPAMP解説書:PPTX版](./docs/OPAMP_OR1.pptx)
+- [OR1版OPAMP解説書:PDF版](./OPAMP_OR1.pdf)
+- [OR1版OPAMP解説書:PPTX版](./OPAMP_OR1.pptx)
     - SPDX-License-Identifier: Apache-2.0  
