@@ -18,8 +18,7 @@
     * [資料](./lecture/opamp-07.pdf)
 * [初めてのOPAMP設計講座Vol.8（2025/07/24）](https://youtube.com/live/bsnM7mGUCtY?feature=share)
     * [資料](./lecture/opamp-08.pdf)
-* [初めてのOPAMP設計講座Vol.9（2025/07/31）](https://youtube.com/live/fTUNI5V6kBU?feature=share)
-    * [資料](./lecture/opamp-09.pdf)
+    * [Boris資料](https://docs.google.com/presentation/d/e/2PACX-1vSpBAAo7FrOt8EPkxNUWHZqG449vEqg1TQqBdb4NSavHWQxaw54H4-pJCjfK0DKrg/pub?slide=id.g36793c0ddeb_0_5)
 
 
 
