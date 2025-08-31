@@ -4,6 +4,13 @@
 - [TR10版1bit-CPUテストベンチ](./1bit-CPU_1line_tb.sch)
 - [TR10版1bit-CPUレイアウト](./1bit-CPU_1line.gds)
 
+## シミュレーション
+シミュレーションには[logicsim](http://www.cburch.com/logisim/)を利用しています。  
+
+ ![1bit-CPUのシミュレーション回路](images/logicsim_1bit-CPU.png)
+
+- [シミュレーションファイルのディレクトリ](logicsim)
+
 ## 詳細解説資料
 上記の設計を詳細に解説した資料です。  
 - [TR10版1bit-CPU解説書:PDF版](../docs/1bit-CPU_TR10.pdf)
@@ -15,3 +22,10 @@
 他のPDKがインストール済み場合は、「bash unisntall.sh」を実施してからセットアップしてください。  
 
 - [セットアップツール](https://github.com/ishi-kai/OpenRule1umPDK_setupEDA)
+
+
+## オプション
+### 最小構成
+- [1bit-CPUの最小構成の回路図](./1bit-CPU_1line_min.sch)
+- [1bit-CPUの最小構成のレイアウト](./1bit-CPU_1line_min.gds)
+
