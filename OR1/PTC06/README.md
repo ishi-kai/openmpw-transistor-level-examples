@@ -12,7 +12,7 @@
 [滋賀県立大学の土谷先生](https://db.spins.usp.ac.jp/html/200000364_ja.html)に初めての方を対象としたOPAMP回路がどのような構造になっているのか？それらの特徴や設計のポイントなど解説した講座を開催しました  
 実施していただいた「初めてのOPAMP設計講座」の内容は、下記にアーカイブがありますので、初めての方は、まず、こちらのビデオや資料を見ていただくと良いかと思います。  
 
-- [講座の各種リンク](./docs/README.md)
+- [講座の各種リンク](/docs/README.md)
 
 
 # 設計編（回路図とシミュレーション）
@@ -65,7 +65,8 @@
 | gm*rds(Intrinsic gain) | 323.52 | 231.4 |
 
 
-しきい値電圧の違いもありますが、nMOS と pMOS でかなり特性が違います。nMOS は Intrinsic gain (gm*rds)が323.52 (50 dB)で十分に見えます。直流利得は pMOS で稼ぐのがよさそうな雰囲気がします。ちょっと、pMOSのほうがIntrinsic gainが低いのが気になるので、L を2倍 (2 um) にした場合も見ておきましょう。W/L は同じ 10 になるように、W=20 umです。
+しきい値電圧の違いもありますが、nMOS と pMOS でかなり特性が違います。nMOS は Intrinsic gain (gm*rds)が323.52 (50 dB)で十分に見えます。直流利得は pMOS で稼ぐのがよさそうな雰囲気がします。ちょっと、pMOSのほうがIntrinsic gainが低いのが気になるので、L を2倍 (2 um) にした場合も見ておきましょう。W/L は同じ 10 になるように、W=20 umです。  
+**注意：rdsの値が間違っていますので、ちゃんと計算した値をお使いください。**  
 
 ![nMOS の gm/Id。横軸は Vgs](./opamp/images/nfet_idvds_2L_gm_ivds.png)
 ![pMOS の gm/Id。横軸は Vgs](./opamp/images/pfet_idvds_2L_gm_ivds.png)
@@ -99,6 +100,7 @@
 
 まだ、微妙なところではありますが、これ以上Lを大きくするとMOSのサイズが大きくなりすぎてしまうので、L=2μmを利用することにします。  
 また、利得を稼ぎたいときは L を大きくすればよさそうということが分かります。  
+**注意：rdsの値が間違っていますので、ちゃんと計算した値をお使いください。**  
 
 
 ## オペアンプ
@@ -639,5 +641,5 @@ VIAはメタル層間を、コンタクトはポリシリコンなど基板系�
 # ライセンス
 SPDX-License-Identifier: Apache-2.0  
 
-- Copyright 2024 Noritsuna IMAMURA
 - Copyright 2023 Akira Tsuchiya (atuchiya)
+- Copyright 2024 Noritsuna IMAMURA (noritsuna)

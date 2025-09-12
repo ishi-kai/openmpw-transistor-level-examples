@@ -1,4 +1,4 @@
-# 1bit-CPU設計ハンズオン
+# 1bit-CPU設計
 - [TR10版1bit-CPU回路図](./1bit-CPU.sch)
 - [TR10版1bit-CPU回路図の１ライン版](./1bit-CPU_1line.sch)
 - [TR10版1bit-CPUテストベンチ](./1bit-CPU_1line_tb.sch)
@@ -13,8 +13,8 @@
 
 ## 詳細解説資料
 上記の設計を詳細に解説した資料です。  
-- [TR10版1bit-CPU解説書:PDF版](../docs/1bit-CPU_TR10.pdf)
-- [TR10版1bit-CPU解説書:PPTX版](../docs/1bit-CPU_TR10.pptx)
+- [TR10版1bit-CPU解説書:PDF版](/TR10/docs/1bit-CPU_TR10.pdf)
+- [TR10版1bit-CPU解説書:PPTX版](/TR10/docs/1bit-CPU_TR10.pptx)
     - SPDX-License-Identifier: Apache-2.0  
 
 ## 開発環境のセットアップ
