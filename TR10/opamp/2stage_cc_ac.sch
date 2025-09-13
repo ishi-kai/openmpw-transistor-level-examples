@@ -103,7 +103,7 @@ footprint=1206
 device="ceramic capacitor"}
 C {devices/capa.sym} 540 -480 1 0 {name=C2
 m=1
-value=10p
+value=8.856p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 220 -330 0 0 {name=p2 sig_type=std_logic lab=in}

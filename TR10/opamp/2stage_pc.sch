@@ -1,8 +1,9 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N 70 -370 70 -180 {
 lab=#net1}
@@ -121,7 +122,7 @@ C {IP62LIB/MN.sym} 30 -70 0 0 {name=XM7 model=NMOS w=5u l=1u m=1 as=0 ad=0 ps=0 
 C {IP62LIB/MN.sym} 390 -330 1 0 {name=XM2 model=NMOS w=20u l=1u m=1 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0}
 C {IP62LIB/CSIO.sym} 440 -290 3 0 {name=XC1
 model=F_CSIO
-c=10p
-x=180u
-y=180u
+c=8.856p
+x=120u
+y=120u
 m=1}
