@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.8RC file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 N 70 -370 70 -180 {
 lab=#net1}
@@ -132,7 +131,7 @@ C {devices/opin.sym} 530 -130 0 0 {name=p4 lab=out}
 C {devices/iopin.sym} 450 -450 0 0 {name=p5 lab=vdd}
 C {devices/iopin.sym} 450 -20 0 0 {name=p6 lab=vss}
 C {devices/iopin.sym} -90 -310 1 0 {name=p3 lab=ib}
-C {IP62LIB/MP.sym} 30 -400 0 0 {name=XM9 model=PMOS w=10u l=1u m=1 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0}
+C {IP62LIB/MP.sym} 30 -400 0 0 {name=XM9 model=PMOS w=30u l=1u m=1 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0}
 C {IP62LIB/MN.sym} 390 -330 1 0 {name=XM12 model=NMOS w=20u l=1u m=1 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0}
 C {IP62LIB/MP.sym} -50 -400 0 1 {name=XM1 model=PMOS w=30u l=1u m=1 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0}
 C {IP62LIB/MN.sym} 30 -150 0 0 {name=XM10 model=NMOS w=5u l=1u m=1 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0}
