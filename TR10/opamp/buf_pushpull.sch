@@ -52,6 +52,6 @@ C {devices/ipin.sym} -350 -240 0 0 {name=p2 lab=vbias}
 C {IP62LIB/MP.sym} -240 -240 0 0 {name=XM1 model=PMOS w=90u l=1u m=1 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0}
 C {IP62LIB/MN.sym} -160 -110 0 1 {name=XM3 model=NMOS w=30u l=1u m=1 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0}
 C {IP62LIB/MN.sym} -50 -110 0 0 {name=XM2 model=NMOS w=300u l=1u m=1 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0}
-C {IP62LIB/MP.sym} -60 0 0 0 {name=XM4 model=PMOS w=900u l=1u m=1 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0}
+C {IP62LIB/MP.sym} -50 0 0 0 {name=XM4 model=PMOS w=900u l=1u m=1 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0}
 C {IP62LIB/MP.sym} -160 0 0 1 {name=XM5 model=PMOS w=90u l=1u m=1 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0}
 C {IP62LIB/MN.sym} -240 130 0 0 {name=XM6 model=NMOS w=30u l=1u m=1 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0}
