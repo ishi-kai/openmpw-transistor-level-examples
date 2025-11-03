@@ -44,7 +44,7 @@ EDAツールの使い方の学習が目的のハンズオンです。
 - [サンプル回路の解説資料](https://github.com/ishi-kai/openmpw-transistor-level-examples/tree/main/GF180/bgr)
 
 ## 1bit-CPU回路
-ロジック回路がどのようにGDSに変換されているのかの学習が目的のハンズオンです。  
+HDLやロジック回路（デジタル回路）がどのようにGDSに変換されているのかの学習が目的のハンズオンです。  
 
 ### TR10向け
 - [サンプル回路](https://github.com/ishi-kai/openmpw-transistor-level-examples/tree/main/TR10/1bit-CPU)
