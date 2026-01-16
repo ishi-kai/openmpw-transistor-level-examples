@@ -2,14 +2,15 @@
 SPDX-License-Identifier: Apache-2.0 
 
 - Copyright 2023 Akira Tsuchiya (atuchiya)
+- Copyright 2024 Mizuki MORI (3zki) 
 - Copyright 2024 Noritsuna IMAMURA (noritsuna) 
 
 
 ## インバータ回路
 EDAツールの使い方の学習が目的のハンズオンです。  
 
-- [サンプル回路](https://github.com/ishi-kai/OpenRule1umPDK_setupEDA/tree/main/samples/inverter)
-- [ツールの使い方解説資料](https://github.com/ishi-kai/OpenRule1umPDK_setupEDA/tree/main/docs)
+- [サンプル回路](https://github.com/ishi-kai/OpenEDA-PDK_SetupScript/tree/main/samples/inverter)
+- [ツールの使い方解説資料](https://github.com/ishi-kai/OpenEDA-PDK_SetupScript/tree/main/docs)
 - [サンプル回路の解説資料](https://github.com/3zki/lsi1_analog1/blob/main/analog_tutorial_jp.pdf)
 
 ## OPAMP回路
