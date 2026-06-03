@@ -1,4 +1,6 @@
 # 1bit-CPU設計
+[TR10（東海理化シャトル） PDK](https://github.com/ishi-kai/OpenEDA-PDK_SetupScript)の[TR10（東海理化シャトル）PDK](https://github.com/ishi-kai/OpenEDA-PDK_SetupScript#in-the-case-of-the-tokai-rika-shuttle-pdk)向けに設計されています。
+
 ## ドキュメント
 ロジック回路（デジタル回路）の設計手法の一つを解説した資料です。  
 HDLやロジック回路（デジタル回路）がどのようにGDSに変換されているのかの学習が目的のハンズオンです。  
@@ -24,7 +26,7 @@ HDLやロジック回路（デジタル回路）がどのようにGDSに変換�
 本ハンズオンを実施するには、EDAと東海理化シャトルPDKのセットアップをしてください。  
 他のPDKがインストール済み場合は、「bash unisntall.sh」を実施してからセットアップしてください。  
 
-- [セットアップツール](https://github.com/ishi-kai/OpenRule1umPDK_setupEDA)
+- [セットアップツール](https://github.com/ishi-kai/OpenEDA-PDK_SetupScript)
 
 
 ## オプション

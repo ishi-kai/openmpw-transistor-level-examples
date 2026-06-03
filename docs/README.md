@@ -32,6 +32,7 @@ OPAMPを設計するための最低限を解説をした資料です。
 
 - [OR1/PTC06版OPAMP解説](/OR1/PTC06//README.md)
 - [TR10版OPAMP解説](/TR10/opamp/README.md)
+- [OpenSUSI-TR10版OPAMP解説](/OpenSUSI-TR10/opamp/README.md)
 
 
 ### 詳細解説資料
@@ -41,6 +42,8 @@ OPAMPを設計するための最低限を解説をした資料です。
 - [OR1/PTC06版OPAMP解説書:PPTX版](/OR1/PTC06/docs/OPAMP_OR1.pptx)
 - [TR10版OPAMP解説書:PDF版](/TR10/docs/OPAMP_TR10.pdf)
 - [TR10版OPAMP解説書:PPTX版](/TR10/docs/OPAMP_TR10.pptx)
+- [OpenSUSI-TR10版OPAMP解説書:PDF版](/OpenSUSI-TR10/docs/OPAMP_OpenSUSI-TR10.pdf)
+- [OpenSUSI-TR10版OPAMP解説書:PPTX版](/OpenSUSI-TR10/docs/OPAMP_OpenSUSI-TR10.pptx)
     - SPDX-License-Identifier: Apache-2.0  
 
 
@@ -51,6 +54,7 @@ OPAMPを設計するための最低限を解説をした資料です。
 ひとまず、1bit-CPUを設計手順を体験してみたい方はこちらの資料からチャレンジしてみてください。  
 
 - [TR10版1bit-CPU解説](/TR10/1bit-CPU/README.md)
+- [OpenSUSI-TR10版1bit-CPU解説](/OpenSUSI-TR10/1bit-CPU/README.md)
 
 
 ### 詳細解説資料
@@ -58,4 +62,6 @@ OPAMPを設計するための最低限を解説をした資料です。
 上記の設計資料では、どうしてそのような設計をするのか？や計算になるのかはほとんど解説されていませんので、それを補強する資料となります。  
 - [TR10版OPAMP解説書:PDF版](/TR10/docs/1bit-CPU_TR10.pdf)
 - [TR10版OPAMP解説書:PPTX版](/TR10/docs/1bit-CPU_TR10.pptx)
+- [OpenSUSI-TR10版OPAMP解説書:PDF版](/OpenSUSI-TR10/docs/1bit-CPU_OpenSUSI-TR10.pdf)
+- [OpenSUSI-TR10版OPAMP解説書:PPTX版](/OpenSUSI-TR10/docs/1bit-CPU_OpenSUSI-TR10.pptx)
     - SPDX-License-Identifier: Apache-2.0  

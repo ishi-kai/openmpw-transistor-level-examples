@@ -12,7 +12,7 @@
 
 ## インバータ回路
 EDAツールの使い方の学習が目的のハンズオンです。  
-- [サンプル回路](https://github.com/ishi-kai/OpenRule1umPDK_setupEDA/tree/main/samples/inverter)
+- [サンプル回路](./inverter/)
 
 # OPAMP設計ハンズオン
 アナログ回路の基礎の学習が目的のハンズオンです。  

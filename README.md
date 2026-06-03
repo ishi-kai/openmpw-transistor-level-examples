@@ -3,7 +3,7 @@ SPDX-License-Identifier: Apache-2.0
 
 - Copyright 2023 Akira Tsuchiya (atuchiya)
 - Copyright 2024 Mizuki MORI (3zki) 
-- Copyright 2024 Noritsuna IMAMURA (noritsuna) 
+- Copyright 2024-2026 Noritsuna IMAMURA (noritsuna) 
 
 
 ## インバータ回路
@@ -22,6 +22,9 @@ EDAツールの使い方の学習が目的のハンズオンです。
 ### TR10向け
 - [サンプル回路](https://github.com/ishi-kai/openmpw-transistor-level-examples/tree/main/TR10/opamp)
 - [サンプル回路の解説資料](https://github.com/ishi-kai/openmpw-transistor-level-examples/blob/main/TR10/docs/OPAMP_TR10.pdf)
+### OpenSUSI-TR10向け
+- [サンプル回路](https://github.com/ishi-kai/openmpw-transistor-level-examples/tree/main/OpenSUSI-TR10/opamp)
+- [サンプル回路の解説資料](https://github.com/ishi-kai/openmpw-transistor-level-examples/blob/main/OpenSUSI-TR10/docs/OPAMP_OpenSUSI-TR10.pdf)
 ### GF180向け
 - [サンプル回路](https://github.com/ishi-kai/openmpw-transistor-level-examples/tree/main/GF180/opamp)
 - [サンプル回路の解説資料](https://github.com/ishi-kai/openmpw-transistor-level-examples/tree/main/GF180/opamp)
@@ -35,6 +38,9 @@ EDAツールの使い方の学習が目的のハンズオンです。
 ### TR10向け
 - [サンプル回路](https://github.com/ishi-kai/openmpw-transistor-level-examples/tree/main/TR10/current-source)
 - [サンプル回路の解説資料](https://github.com/ishi-kai/openmpw-transistor-level-examples/blob/main/TR10/docs/CS_TR10.pdf)
+### OpenSUSI-TR10向け
+- [サンプル回路](https://github.com/ishi-kai/openmpw-transistor-level-examples/tree/main/OpenSUSI-TR10/current-source)
+- [サンプル回路の解説資料](https://github.com/ishi-kai/openmpw-transistor-level-examples/blob/main/OpenSUSI-TR10/docs/CS_OpenSUSI-TR10.pdf)
 ### GR180向け
 - [サンプル回路](https://github.com/ishi-kai/openmpw-transistor-level-examples/tree/main/GF180/current-source)
 - [サンプル回路の解説資料](https://github.com/ishi-kai/openmpw-transistor-level-examples/tree/main/GF180/current-source)
@@ -50,6 +56,9 @@ HDLやロジック回路（デジタル回路）がどのようにGDSに変換�
 ### TR10向け
 - [サンプル回路](https://github.com/ishi-kai/openmpw-transistor-level-examples/tree/main/TR10/1bit-CPU)
 - [サンプル回路の解説資料](https://github.com/ishi-kai/openmpw-transistor-level-examples/blob/main/TR10/docs/1bit-CPU_TR10.pdf)
+### OpenSUSI-TR10向け
+- [サンプル回路](https://github.com/ishi-kai/openmpw-transistor-level-examples/tree/main/OpenSUSI-TR10/1bit-CPU)
+- [サンプル回路の解説資料](https://github.com/ishi-kai/openmpw-transistor-level-examples/blob/main/OpenSUSI-TR10/docs/1bit-CPU_OpenSUSI-TR10.pdf)
 
 
 

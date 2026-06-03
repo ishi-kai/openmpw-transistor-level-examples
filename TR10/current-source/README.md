@@ -1,5 +1,5 @@
 # 電流源を設計してみよう
-[TR10（東海理化シャトル） PDK](https://github.com/ishi-kai/OpenRule1umPDK_setupEDA)の[TR10（東海理化シャトル）PDK](https://github.com/ishi-kai/OpenRule1umPDK_setupEDA?tab=readme-ov-file#%E6%9D%B1%E6%B5%B7%E7%90%86%E5%8C%96%E3%82%B7%E3%83%A3%E3%83%88%E3%83%ABpdk)向けに設計されています。
+[TR10（東海理化シャトル） PDK](https://github.com/ishi-kai/OpenEDA-PDK_SetupScript)の[TR10（東海理化シャトル）PDK](https://github.com/ishi-kai/OpenEDA-PDK_SetupScript#in-the-case-of-the-tokai-rika-shuttle-pdk)向けに設計されています。
 
 ## ドキュメント
 電流源の設計手法の一つを解説した資料です。  
