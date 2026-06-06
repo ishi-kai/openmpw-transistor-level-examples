@@ -15,6 +15,7 @@ EDAツールの使い方の学習が目的のハンズオンです。
 
 ## OPAMP回路
 アナログ回路の基礎の学習が目的のハンズオンです。  
+理解に必要な基礎知識一覧は、「[LSI設計者のためのCMOSアナログ回路入門』を読む前に必要な数学チートシート（生成AI質問用）](https://zenn.dev/qwerewq/articles/ffcd84ffa97e18)」をご覧ください。  
 
 ### OR1向け
 - [サンプル回路](https://github.com/ishi-kai/openmpw-transistor-level-examples/tree/main/OR1/PTC06)
@@ -28,6 +29,24 @@ EDAツールの使い方の学習が目的のハンズオンです。
 ### GF180向け
 - [サンプル回路](https://github.com/ishi-kai/openmpw-transistor-level-examples/tree/main/GF180/opamp)
 - [サンプル回路の解説資料](https://github.com/ishi-kai/openmpw-transistor-level-examples/tree/main/GF180/opamp)
+
+
+### Rail-to-Rail OPAMP回路
+OPAMP設計ハンズオンをマスター人向けのRail-to-Rail OPAMPの解説です。  
+理解に必要な基礎知識一覧は、「[LSI設計者のためのCMOSアナログ回路入門』を読む前に必要な数学チートシート（生成AI質問用）](https://zenn.dev/qwerewq/articles/ffcd84ffa97e18)」をご覧ください。  
+
+### OpenSUSI-TR10向け
+- [サンプル回路](https://github.com/ishi-kai/openmpw-transistor-level-examples/tree/main/OpenSUSI-TR10/opamp_r2r/)
+- [サンプル回路の解説資料](https://github.com/ishi-kai/openmpw-transistor-level-examples/blob/main/OpenSUSI-TR10/docs/OPAMP_R2R_OpenSUSI-TR10.pdf)
+
+
+### オーディオ用OPAMP回路
+オーディオ用OPAMPの音質に関する部分だけを設計して、レイアウトするハンズオンとなります。  
+
+### OpenSUSI-TR10向け
+- [サンプル回路](https://github.com/ishi-kai/openmpw-transistor-level-examples/tree/main/OpenSUSI-TR10/opamp_r2r_audio/)
+- [サンプル回路の解説資料](https://github.com/ishi-kai/openmpw-transistor-level-examples/blob/main/OpenSUSI-TR10/docs/OPAMP_R2R_Audio_OpenSUSI-TR10.pdf)
+
 
 ## CS回路
 アナログ回路の基礎の学習が目的のハンズオンです。  
@@ -64,4 +83,11 @@ HDLやロジック回路（デジタル回路）がどのようにGDSに変換�
 
 ## リンク
 - [各種ドキュメントリンク集](/docs/README.md)
+- [LSI設計者のためのCMOSアナログ回路入門』を読む前に必要な数学チートシート（生成AI質問用）](https://zenn.dev/qwerewq/articles/ffcd84ffa97e18) 
 
+
+## 各種公式やパラメータ一覧表
+- ![基本公式](/images/CMOS_Basis.png)
+- ![基本増幅回路](/images/CMOS_Basic_Circuit.png)
+- ![Id, W/L, gmの関係](/images/ID_WL_GM.png)
+- ![キャラクタライズ数値例](/images/MOSFET_Characterization)

@@ -3,6 +3,7 @@
 
 ## ドキュメント
 下記の資料をプレゼン形式にまとめたバージョンです。一部の用語などより詳細に解説しています。  
+また、理解に必要な基礎知識一覧は、「[LSI設計者のためのCMOSアナログ回路入門』を読む前に必要な数学チートシート（生成AI質問用）](https://zenn.dev/qwerewq/articles/ffcd84ffa97e18)」をご覧ください。  
 
 - [OR1版OPAMP解説書:PDF版](./docs/OPAMP_OR1.pdf)
 - [OR1版OPAMP解説書:PPTX版](./docs/OPAMP_OR1.pptx)
@@ -13,6 +14,13 @@
 実施していただいた「初めてのOPAMP設計講座」の内容は、下記にアーカイブがありますので、初めての方は、まず、こちらのビデオや資料を見ていただくと良いかと思います。  
 
 - [講座の各種リンク](/docs/README.md)
+
+
+## 各種公式やパラメータ一覧表
+- ![基本公式](/images/CMOS_Basis.png)
+- ![基本増幅回路](/images/CMOS_Basic_Circuit.png)
+- ![Id, W/L, gmの関係](/images/ID_WL_GM.png)
+- ![キャラクタライズ数値例](/images/MOSFET_Characterization)
 
 
 # 設計編（回路図とシミュレーション）
