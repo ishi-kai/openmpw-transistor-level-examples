@@ -3,6 +3,7 @@ SPDX-License-Identifier: Apache-2.0
 
 - Copyright 2023 Akira Tsuchiya (atuchiya)
 - Copyright 2024 Mizuki MORI (3zki) 
+- Copyright 2026 MOSバーガー (カニテツ) 
 - Copyright 2024-2026 Noritsuna IMAMURA (noritsuna) 
 
 
