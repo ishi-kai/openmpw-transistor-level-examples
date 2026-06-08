@@ -9,6 +9,7 @@ HDLやロジック回路（デジタル回路）がどのようにGDSに変換�
 - [OpenSUSI-TR10版1bit-CPUテストベンチ](./1bit-CPU_1line_tb.sch)
 - [OpenSUSI-TR10版1bit-CPUレイアウト](./1bit-CPU_1line.gds)
 
+
 ## シミュレーション
 シミュレーションには[logicsim](http://www.cburch.com/logisim/)を利用しています。  
 
@@ -34,3 +35,9 @@ HDLやロジック回路（デジタル回路）がどのようにGDSに変換�
 - [1bit-CPUの最小構成の回路図](./1bit-CPU_1line_min.sch)
 - [1bit-CPUの最小構成のレイアウト](./1bit-CPU_1line_min.gds)
 
+
+### LVS OK
+ファイル名に「-」や「_」などがあるとLVSが通らない問題があるため、削除したバージョン。  
+
+- [OpenSUSI-TR10版1bit-CPU回路図](./1bitCPU.sch)
+- [OpenSUSI-TR10版1bit-CPUレイアウト](./1bitCPU.gds)
