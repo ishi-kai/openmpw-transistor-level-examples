@@ -1,4 +1,4 @@
-# オペアンプを設計してみよう
+# SAR-ADCを設計してみよう
 [TinyTapeout](https://tinytapeout.com/)の[Sky130 PDK](https://github.com/ishi-kai/OpenEDA-PDK_SetupScript)向けに設計されています。
 
 ## ドキュメント
