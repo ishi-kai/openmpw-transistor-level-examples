@@ -1,0 +1,60 @@
+** sch_path: /mnt/c/Data/OneDrive/MyDocuments/Community/ISHIKAI/collaboration/ICHIKEN/SAR-ADC/SAR-ADC_5.0V/comp_tb.sch
+**.subckt comp_tb
+XM21 net3 vinn net1 net1 sky130_fd_pr__pfet_g5v0d10v5 L=1 W=24 nf=1 ad=6.96 as=6.96 pd=48.58 ps=48.58 nrd=0.0120833333333333
++ nrs=0.0120833333333333 sa=0 sb=0 sd=0 mult=1 m=1
+XM25 net1 GND VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=24 nf=1 ad=6.96 as=6.96 pd=48.58 ps=48.58 nrd=0.0120833333333333
++ nrs=0.0120833333333333 sa=0 sb=0 sd=0 mult=1 m=1
+XM1 net4 vinp net1 net1 sky130_fd_pr__pfet_g5v0d10v5 L=1 W=24 nf=1 ad=6.96 as=6.96 pd=48.58 ps=48.58 nrd=0.0120833333333333
++ nrs=0.0120833333333333 sa=0 sb=0 sd=0 mult=1 m=1
+XM2 VOUTP vinp net2 GND sky130_fd_pr__nfet_g5v0d10v5 L=1 W=12 nf=1 ad=3.48 as=3.48 pd=24.58 ps=24.58 nrd=0.0241666666666667
++ nrs=0.0241666666666667 sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net2 VDD GND GND sky130_fd_pr__nfet_g5v0d10v5 L=1 W=8 nf=1 ad=2.32 as=2.32 pd=16.58 ps=16.58 nrd=0.03625 nrs=0.03625 sa=0 sb=0
++ sd=0 mult=1 m=1
+XM4 VOUTN vinn net2 GND sky130_fd_pr__nfet_g5v0d10v5 L=1 W=12 nf=1 ad=3.48 as=3.48 pd=24.58 ps=24.58 nrd=0.0241666666666667
++ nrs=0.0241666666666667 sa=0 sb=0 sd=0 mult=1 m=1
+XM9 VOUTP CLK net4 GND sky130_fd_pr__nfet_g5v0d10v5 L=1 W=8 nf=1 ad=2.32 as=2.32 pd=16.58 ps=16.58 nrd=0.03625 nrs=0.03625 sa=0
++ sb=0 sd=0 mult=1 m=1
+XM10 VOUTN CLK net3 GND sky130_fd_pr__nfet_g5v0d10v5 L=1 W=8 nf=1 ad=2.32 as=2.32 pd=16.58 ps=16.58 nrd=0.03625 nrs=0.03625 sa=0
++ sb=0 sd=0 mult=1 m=1
+XM12 net4 VOUTN GND GND sky130_fd_pr__nfet_g5v0d10v5 L=1 W=8 nf=1 ad=2.32 as=2.32 pd=16.58 ps=16.58 nrd=0.03625 nrs=0.03625 sa=0
++ sb=0 sd=0 mult=1 m=1
+XM13 net3 VOUTP GND GND sky130_fd_pr__nfet_g5v0d10v5 L=1 W=8 nf=1 ad=2.32 as=2.32 pd=16.58 ps=16.58 nrd=0.03625 nrs=0.03625 sa=0
++ sb=0 sd=0 mult=1 m=1
+XM14 VOUTN VOUTP VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=10 nf=1 ad=2.9 as=2.9 pd=20.58 ps=20.58 nrd=0.029 nrs=0.029 sa=0 sb=0
++ sd=0 mult=1 m=1
+XM26 VOUTN CLK VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=12 nf=1 ad=3.48 as=3.48 pd=24.58 ps=24.58 nrd=0.0241666666666667
++ nrs=0.0241666666666667 sa=0 sb=0 sd=0 mult=1 m=1
+XM5 VOUTP VOUTN VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=12 nf=1 ad=3.48 as=3.48 pd=24.58 ps=24.58 nrd=0.0241666666666667
++ nrs=0.0241666666666667 sa=0 sb=0 sd=0 mult=1 m=1
+XM6 VOUTP CLK VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=10 nf=1 ad=2.9 as=2.9 pd=20.58 ps=20.58 nrd=0.029 nrs=0.029 sa=0 sb=0
++ sd=0 mult=1 m=1
+VDD VDD GND 5.0
+VPLL CLK GND PULSE(0 5 1n 1n 1n 50n 100n)
+Vinn vinn GND 2.0
+Vinp vinp GND PWL(0n 0 2u 5)
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+.lib /home/ishi-kai/pdk/sky130A/libs.tech/combined/sky130.lib.spice tt
+
+
+
+
+.temp 27
+.option savecurrent
+.control
+save all
+
+.tran 100p 2.2u
+
+plot v(clk) v(vinp) v(vinn) v(VOUTP)+5 v(VOUTN)+10
+plot v(clk) v(vinp) v(vinn) v(VOUTP)+5 v(VOUTN)+10 xlimit 700n 900n
+
+.end
+
+
+**** end user architecture code
+**.ends
+.GLOBAL VDD
+.GLOBAL GND
+.end

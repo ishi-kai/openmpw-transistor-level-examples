@@ -1,0 +1,41 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {type=subcircuit
+format="@spiceprefix@name @pinlist @symname"
+template="name=M1
+spiceprefix=X"
+}
+V {}
+S {}
+F {}
+E {}
+L 4 -130 -80 130 -80 {}
+L 4 -130 80 130 80 {}
+L 4 -130 -80 -130 80 {}
+L 4 130 -80 130 80 {}
+L 7 130 -70 150 -70 {}
+L 7 130 70 150 70 {}
+L 7 130 -10 150 -10 {}
+L 7 130 -50 150 -50 {}
+L 7 130 50 150 50 {}
+L 7 130 30 150 30 {}
+L 7 130 10 150 10 {}
+L 7 130 -30 150 -30 {}
+B 5 147.5 -72.5 152.5 -67.5 {name=common_bottom dir=inout}
+B 5 147.5 67.5 152.5 72.5 {name=top_c5 dir=inout}
+B 5 147.5 -32.5 152.5 -27.5 {name=top_c0 dir=inout}
+B 5 147.5 7.5 152.5 12.5 {name=top_c2 dir=inout}
+B 5 147.5 47.5 152.5 52.5 {name=top_c4 dir=inout}
+B 5 147.5 27.5 152.5 32.5 {name=top_c3 dir=inout}
+B 5 147.5 -52.5 152.5 -47.5 {name=top_c_dummy dir=inout}
+B 5 147.5 -12.5 152.5 -7.5 {name=top_c1 dir=inout}
+T {@symname} -85.5 -6 0 0 0.3 0.3 {}
+T {@name} 135 -92 0 0 0.2 0.2 {}
+T {common_bottom} 125 -74 0 1 0.2 0.2 {}
+T {top_c5} 125 66 0 1 0.2 0.2 {}
+T {top_c0} 125 -34 0 1 0.2 0.2 {}
+T {top_c2} 125 6 0 1 0.2 0.2 {}
+T {top_c4} 125 46 0 1 0.2 0.2 {}
+T {top_c3} 125 26 0 1 0.2 0.2 {}
+T {top_c_dummy} 125 -54 0 1 0.2 0.2 {}
+T {top_c1} 125 -14 0 1 0.2 0.2 {}

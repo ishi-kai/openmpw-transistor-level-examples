@@ -81,6 +81,13 @@ HDLやロジック回路（デジタル回路）がどのようにGDSに変換�
 - [サンプル回路の解説資料](https://github.com/ishi-kai/openmpw-transistor-level-examples/blob/main/OpenSUSI-TR10/docs/1bit-CPU_OpenSUSI-TR10.pdf)
 
 
+## SAR-ADC回路
+ロジック回路（デジタル回路）とアナログ回路の混載回路を学習することが目的のハンズオンです。  
+
+### SKY130向け
+- [サンプル回路](https://github.com/ishi-kai/openmpw-transistor-level-examples/tree/main/SKY130/SAR-ADC)
+- [サンプル回路の解説資料](https://github.com/ishi-kai/openmpw-transistor-level-examples/blob/main/SKY130/docs/SAR-ADC_SKY130.pdf)
+
 
 ## リンク
 - [各種ドキュメントリンク集](/docs/README.md)
