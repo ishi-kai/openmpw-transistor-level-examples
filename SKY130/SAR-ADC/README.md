@@ -1,5 +1,6 @@
 # SAR-ADCを設計してみよう
-[TinyTapeout](https://tinytapeout.com/)の[Sky130 PDK](https://github.com/ishi-kai/OpenEDA-PDK_SetupScript)向けに設計されています。
+[TinyTapeout](https://tinytapeout.com/)の[Sky130 PDK](https://github.com/ishi-kai/OpenEDA-PDK_SetupScript)向けに設計されています。  
+[Chipathon2023向けに作ったSAR-ADC](https://github.com/ishi-kai/Chipathon2023_ADC)をベースに設計されています。  
 
 ## ドキュメント
 SAR-ADCの設計手法の一つを解説した資料です。  
@@ -23,4 +24,5 @@ SAR-ADCの設計手法の一つを解説した資料です。
 # ライセンス
 SPDX-License-Identifier: Apache-2.0  
 
+- Copyright 2023 Chipathon2023 SAR-ADC Team
 - Copyright 2026 Noritsuna IMAMURA (noritsuna)
