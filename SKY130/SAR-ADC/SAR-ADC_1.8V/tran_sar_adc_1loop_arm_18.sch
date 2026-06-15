@@ -56,9 +56,9 @@ lab=COMP_CLK}
 N 3140 -840 3140 -820 {
 lab=COMP_CLK}
 N 1860 -920 1900 -920 {
-lab=VOUTN}
+lab=#net1}
 N 1860 -900 1880 -900 {
-lab=VOUTP}
+lab=VOUTN}
 N 1360 -320 2780 -320 {
 lab=CDACDMY}
 N 1360 -300 2780 -300 {
@@ -168,10 +168,8 @@ lab=VREF}
 N 1400 -860 1560 -860 {
 lab=VIN}
 N 1980 -880 1980 -860 {
-lab=VOUTP}
+lab=#net1}
 N 1980 -920 1980 -900 {
-lab=VOUTN}
-N 1900 -920 1900 -900 {
 lab=VOUTN}
 N 2800 -690 2800 -680 {
 lab=SDAC6}
@@ -217,12 +215,6 @@ N 2900 -1120 2900 -980 {
 lab=DIGITAL_OUT[0]}
 N 2920 -1120 2920 -980 {
 lab=EOC}
-N 1880 -900 1880 -880 {
-lab=VOUTP}
-N 1880 -880 2000 -880 {
-lab=VOUTP}
-N 1900 -900 2000 -900 {
-lab=VOUTN}
 N 2100 -480 2100 -260 {lab=CDAC2}
 N 2320 -480 2320 -280 {lab=CDAC1}
 N 2540 -480 2540 -300 {lab=CDAC0}
@@ -235,6 +227,9 @@ N 2360 -920 2380 -920 {lab=Qn_LATCH}
 N 2300 -900 2340 -900 {lab=COMP_OUT}
 N 2340 -900 2340 -820 {lab=COMP_OUT}
 N 2300 -920 2360 -920 {lab=Qn_LATCH}
+N 1880 -900 2000 -900 {lab=VOUTN}
+N 1900 -920 1900 -880 {lab=#net1}
+N 1900 -880 2000 -880 {lab=#net1}
 C {devices/vsource.sym} 60 -230 0 0 {name=Vref value=1.8 savecurrent=false}
 C {devices/gnd.sym} 160 -200 0 0 {name=l2 lab=GND}
 C {devices/gnd.sym} 60 -200 0 0 {name=l3 lab=GND}

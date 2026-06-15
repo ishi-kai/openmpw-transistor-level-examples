@@ -355,7 +355,7 @@ C {devices/lab_pin.sym} 3060 -460 2 0 {name=p24 sig_type=std_logic lab=VREF}
 C {SR.sym} 2190 -1230 0 0 {name=M2
 spiceprefix=X
 }
-C {SAR_LOGIC_hirano_FULL.sym} 2970 -1210 0 0 {name=x1 prefix=SAR_LOGIC}
+C {SAR_LOGIC.sym} 2970 -1210 0 0 {name=x1 prefix=SAR_LOGIC}
 C {SW_CDAC.sym} 1500 -500 0 1 {name=M4
 spiceprefix=X}
 C {SW_CDAC.sym} 1740 -500 0 1 {name=M5

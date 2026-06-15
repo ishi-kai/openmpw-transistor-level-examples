@@ -30,9 +30,9 @@ lab=SC}
 N 910 -300 910 -260 {
 lab=VIN}
 N 2010 -1220 2010 -1200 {
-lab=VOUTN}
-N 2010 -1260 2010 -1240 {
 lab=VOUTP}
+N 2010 -1260 2010 -1240 {
+lab=VOUTN}
 N 210 -300 210 -260 {
 lab=VDPWR}
 N 110 -300 110 -260 {
@@ -137,8 +137,6 @@ N 3060 -480 3080 -480 {
 lab=VREF}
 N 3080 -540 3080 -480 {
 lab=VREF}
-N 1940 -1260 1940 -1240 {
-lab=VOUTP}
 N 2020 -480 2020 -240 {
 lab=CDAC3}
 N 1800 -480 1800 -220 {
@@ -159,12 +157,6 @@ N 3040 -1460 3040 -1320 {
 lab=DIGITAL_OUT[0]}
 N 3060 -1460 3060 -1320 {
 lab=EOC}
-N 1920 -1240 1920 -1220 {
-lab=VOUTN}
-N 1920 -1220 2040 -1220 {
-lab=VOUTN}
-N 1940 -1240 2040 -1240 {
-lab=VOUTP}
 N 2760 -1310 2760 -1260 {lab=VDPWR}
 N 2040 -1310 2040 -1260 {lab=VREF}
 N 1600 -1310 1600 -1260 {lab=VREF}
@@ -249,6 +241,9 @@ N 2380 -1240 2380 -1160 {lab=COMP_OUT}
 N 2380 -1160 2490 -1160 {lab=COMP_OUT}
 N 2490 -1220 2490 -1160 {lab=COMP_OUT}
 N 2420 -1260 2420 -1240 {lab=Qn_LATCH}
+N 1940 -1260 1940 -1220 {lab=VOUTP}
+N 1940 -1220 2040 -1220 {lab=VOUTP}
+N 1920 -1240 2040 -1240 {lab=VOUTN}
 C {devices/vsource.sym} 310 -230 0 0 {name=VAPwr value=3.3 savecurrent=false}
 C {devices/gnd.sym} 410 -200 0 0 {name=l2 lab=GND}
 C {devices/gnd.sym} 310 -200 0 0 {name=l3 lab=GND}
@@ -309,8 +304,8 @@ C {devices/lab_pin.sym} 910 -300 2 1 {name=p25 sig_type=std_logic lab=VIN}
 C {devices/gnd.sym} 910 -200 0 0 {name=l22 lab=GND}
 C {devices/vsource.sym} 910 -230 0 0 {name=Vin value=2 savecurrent=false}
 C {devices/lab_pin.sym} 1440 -1200 0 0 {name=p26 sig_type=std_logic lab=VIN}
-C {devices/lab_pin.sym} 2010 -1200 0 0 {name=p27 sig_type=std_logic lab=VOUTN}
-C {devices/lab_pin.sym} 2010 -1260 2 1 {name=p28 sig_type=std_logic lab=VOUTP}
+C {devices/lab_pin.sym} 2010 -1260 0 0 {name=p27 sig_type=std_logic lab=VOUTN}
+C {devices/lab_pin.sym} 2010 -1200 2 1 {name=p28 sig_type=std_logic lab=VOUTP}
 C {devices/lab_pin.sym} 2920 -260 0 1 {name=p29 sig_type=std_logic lab=CDAC2}
 C {devices/lab_pin.sym} 2920 -280 0 1 {name=p30 sig_type=std_logic lab=CDAC1}
 C {devices/lab_pin.sym} 2920 -300 0 1 {name=p31 sig_type=std_logic lab=CDAC0}

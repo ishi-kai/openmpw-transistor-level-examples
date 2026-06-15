@@ -54,7 +54,7 @@ N 170 100 170 120 {lab=#net3}
 N 350 100 350 120 {lab=#net4}
 N 200 70 200 90 {lab=VSS}
 N 170 70 200 70 {lab=VSS}
-N 380 70 380 90 {lab=0}
+N 380 70 380 90 {lab=VSS}
 N 170 -80 170 40 {lab=VOUTN}
 N 350 -80 350 40 {lab=VOUTP}
 N 210 -110 230 -110 {lab=VOUTP}
@@ -63,7 +63,7 @@ N 230 -60 350 -60 {lab=VOUTP}
 N 290 -110 310 -110 {lab=VOUTN}
 N 290 -110 290 -70 {lab=VOUTN}
 N 170 -70 290 -70 {lab=VOUTN}
-N 350 70 380 70 {lab=0}
+N 350 70 380 70 {lab=VSS}
 N 310 30 310 70 {lab=CLK}
 N 70 30 310 30 {lab=CLK}
 N 70 30 70 70 {lab=CLK}
@@ -236,10 +236,10 @@ nf=1 mult=1
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/ipin.sym} -520 -160 0 0 {name=p11 lab=VDD}
+C {devices/iopin.sym} -520 -160 0 0 {name=p11 lab=VDD}
 C {devices/lab_wire.sym} 90 -170 0 0 {name=p3 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 420 -170 0 0 {name=p2 sig_type=std_logic lab=VDD}
-C {devices/ipin.sym} -520 330 0 0 {name=p7 lab=VSS}
+C {devices/iopin.sym} -520 330 0 0 {name=p7 lab=VSS}
 C {devices/lab_wire.sym} -580 250 0 0 {name=p8 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} -570 40 2 0 {name=p12 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} -590 -90 2 0 {name=p10 sig_type=std_logic lab=VSS}
