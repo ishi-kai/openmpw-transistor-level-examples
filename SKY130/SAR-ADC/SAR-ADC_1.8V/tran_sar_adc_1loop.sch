@@ -240,7 +240,7 @@ N 1680 -980 1680 -940 {lab=VREF}
 C {devices/vsource.sym} 60 -230 0 0 {name=Vref value=1.8 savecurrent=false}
 C {devices/gnd.sym} 160 -200 0 0 {name=l2 lab=GND}
 C {devices/gnd.sym} 60 -200 0 0 {name=l3 lab=GND}
-C {devices/simulator_commands_shown.sym} 40 -1320 0 0 {name=COMMANDS
+C {devices/simulator_commands_shown.sym} 0 -1210 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value=".include ~/sar-adc/SAR_LOGIC.spice
@@ -253,7 +253,7 @@ save v(vin) v(VREF) v(vinn) v(COMP_OUT) v(COMP_CLK) v(eoc) v(CDACDMY) v(CDAC0) v
 * delta_v 0.028125
 
 	tran 100n 300u
-	write tran_sar_adc_1loop_18.raw
+	write tran_sar_adc_1loop.raw
 	meas tran vin FIND v(VIN) WHEN v(EOC)=0.9 FALL=LAST
 	meas tran vinn FIND v(VINN) WHEN v(EOC)=0.9 FALL=LAST
 	meas tran vout5 FIND v(DIGITAL_OUT[5]) WHEN v(EOC)=0.9 FALL=LAST
@@ -288,7 +288,7 @@ value="
 spice_ignore=false}
 C {devices/vsource.sym} 160 -230 0 0 {name=VPLL value="pulse(0 1.8 0 1n 1n 400n 800n)" savecurrent=false}
 C {devices/vsource.sym} 420 -230 0 0 {name=Vrst value="pwl(0 0 100n 0 200n 1.8 200n 1.8)" savecurrent=false}
-C {devices/vsource.sym} 660 -230 0 0 {name=Vin value=0.9 savecurrent=false}
+C {devices/vsource.sym} 660 -230 0 0 {name=Vin value=1.5 savecurrent=false}
 C {devices/lab_pin.sym} 60 -300 2 1 {name=p45 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 2720 -880 0 0 {name=p5 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 2720 -900 0 0 {name=p7 sig_type=std_logic lab=XRST}

@@ -125,10 +125,8 @@ if __name__ == '__main__':
     ref_volt = 5.0
 
     # ファイル名の指定
-    base_dir = os.path.expanduser('./')
-#    base_dir = os.path.expanduser('~/.xschem/simulations/')
-    input_file_pattern = os.path.join(base_dir, 'tran_sar_adc_1loop_out_typ_BITNUM_{}.txt')
-#    input_file_pattern = os.path.join(base_dir, 'tran_sar_adc_out_typ_BITNUM_{}.txt')
+    base_dir = os.path.expanduser('~/.xschem/simulations/')
+    input_file_pattern = os.path.join(base_dir, 'tran_sar_adc_out_typ_BITNUM_{}.txt')
     combined_txt_file = 'tran_sar_adc_out_combined.txt'
     csv_file = 'tran_sar_adc_out_typ.csv'
     adc_result_file = 'tran_sar_adc_vin_vout_result.csv'

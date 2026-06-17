@@ -48,22 +48,22 @@ save all
 
 tran 100p 4u
 
-plot v(CLK) v(vinp) v(vinn) v(VOUTN)+5 v(VOUTP)+10 v(VQ)+15 v(VQ_BAR)+20
-plot v(CLK) v(vinp) v(vinn) v(VOUTN)+5 v(VOUTP)+10 v(VQ)+15 v(VQ_BAR)+20 xlimit 700n 900n
+plot v(CLK) v(vinp) v(vinn) v(VOUTN)+1.8 v(VOUTP)+3.6 v(VQ)+5.4 v(VQ_BAR)+7.2
+plot v(CLK) v(vinp) v(vinn) v(VOUTN)+1.8 v(VOUTP)+3.6 v(VQ)+5.4 v(VQ_BAR)+7.2 xlimit 1000n 1200n
 
 write comp_tb.raw
 
 .endc
 "}
-C {devices/vsource.sym} -1250 270 0 0 {name=VDD value=5.0 savecurrent=false}
+C {devices/vsource.sym} -1250 270 0 0 {name=VDD value=1.8 savecurrent=false}
 C {devices/gnd.sym} -1250 300 0 0 {name=l23 lab=GND}
 C {devices/vdd.sym} -1250 200 0 0 {name=l16 lab=VDD}
 C {devices/gnd.sym} -1150 300 0 0 {name=l17 lab=GND}
 C {devices/lab_pin.sym} -1150 200 0 0 {name=p3 sig_type=std_logic lab=CLK}
-C {devices/vsource.sym} -800 270 0 0 {name=Vinn value=2.5 savecurrent=false}
+C {devices/vsource.sym} -800 270 0 0 {name=Vinn value=0.9 savecurrent=false}
 C {devices/gnd.sym} -800 300 0 0 {name=l18 lab=GND}
 C {devices/lab_pin.sym} -800 200 0 0 {name=p44 sig_type=std_logic lab=vinn}
-C {devices/vsource.sym} -900 270 0 0 {name=Vinp value="PWL(0n 0 2u 5)" savecurrent=false}
+C {devices/vsource.sym} -900 270 0 0 {name=Vinp value="PWL(0n 0 2u 1.8)" savecurrent=false}
 C {devices/gnd.sym} -900 300 0 0 {name=l22 lab=GND
 value=1.8}
 C {devices/lab_pin.sym} -900 200 0 0 {name=p45 sig_type=std_logic lab=vinp}
@@ -89,4 +89,4 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 520 -140 0 1 {name=p7 sig_type=std_logic lab=VQ}
 C {devices/lab_pin.sym} 520 -160 0 1 {name=p8 sig_type=std_logic lab=VQ_BAR}
-C {devices/vsource.sym} -1150 270 0 0 {name=VPLL value="pulse(0 5.0 0 1n 1n 400n 800n)" savecurrent=false}
+C {devices/vsource.sym} -1150 270 0 0 {name=VPLL value="pulse(0 1.8 0 1n 1n 400n 800n)" savecurrent=false}

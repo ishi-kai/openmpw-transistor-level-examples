@@ -56,7 +56,7 @@ lab=COMP_CLK}
 N 3140 -840 3140 -820 {
 lab=COMP_CLK}
 N 1860 -920 1900 -920 {
-lab=#net1}
+lab=VOUTP}
 N 1860 -900 1880 -900 {
 lab=VOUTN}
 N 1360 -320 2780 -320 {
@@ -168,7 +168,7 @@ lab=VREF}
 N 1400 -860 1560 -860 {
 lab=VIN}
 N 1980 -880 1980 -860 {
-lab=#net1}
+lab=VOUTP}
 N 1980 -920 1980 -900 {
 lab=VOUTN}
 N 2800 -690 2800 -680 {
@@ -228,8 +228,8 @@ N 2300 -900 2340 -900 {lab=COMP_OUT}
 N 2340 -900 2340 -820 {lab=COMP_OUT}
 N 2300 -920 2360 -920 {lab=Qn_LATCH}
 N 1880 -900 2000 -900 {lab=VOUTN}
-N 1900 -920 1900 -880 {lab=#net1}
-N 1900 -880 2000 -880 {lab=#net1}
+N 1900 -920 1900 -880 {lab=VOUTP}
+N 1900 -880 2000 -880 {lab=VOUTP}
 C {devices/vsource.sym} 60 -230 0 0 {name=Vref value=1.8 savecurrent=false}
 C {devices/gnd.sym} 160 -200 0 0 {name=l2 lab=GND}
 C {devices/gnd.sym} 60 -200 0 0 {name=l3 lab=GND}
@@ -248,7 +248,7 @@ value="
 spice_ignore=false}
 C {devices/vsource.sym} 160 -230 0 0 {name=VPLL value="pulse(0 1.8 0 1n 1n 400n 800n)" savecurrent=false}
 C {devices/vsource.sym} 420 -230 0 0 {name=Vrst value="pwl(0 0 100n 0 200n 1.8 200n 1.8)" savecurrent=false}
-C {devices/vsource.sym} 660 -230 0 0 {name=Vin value=0.7 savecurrent=false}
+C {devices/vsource.sym} 660 -230 0 0 {name=Vin value=0.8 savecurrent=false}
 C {devices/lab_pin.sym} 60 -300 2 1 {name=p45 sig_type=std_logic lab=VREF}
 C {devices/simulator_commands_shown.sym} 30 -1350 0 0 {name=COMMANDS
 simulator=ngspice
@@ -263,7 +263,7 @@ save v(vin) v(VREF) v(vinn) v(COMP_OUT) v(CLK) v(XRST) v(COMP_CLK) v(eoc) v(CDAC
 
 
 	tran 100n 300u
-	write tran_sar_adc_1loop_arm_18.raw
+	write tran_sar_adc_1loop_arm.raw
 	meas tran vind FIND v(VIN) WHEN v(EOC)=0.9 FALL=LAST
 	meas tran vout5 FIND v(DIGITAL_OUT[5]) WHEN v(EOC)=0.9 FALL=LAST
 	meas tran vout4 FIND v(DIGITAL_OUT[4]) WHEN v(EOC)=0.9 FALL=LAST

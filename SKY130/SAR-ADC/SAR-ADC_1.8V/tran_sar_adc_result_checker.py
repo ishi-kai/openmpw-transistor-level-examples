@@ -119,38 +119,18 @@ def convert_txt_to_csv(input_filename, output_filename):
 
     print(f"変換が完了しました。データ数: {len(data_list)} 行 -> {output_filename}")
 
-
 if __name__ == '__main__':
 
-    ref_volt = 5.0
+    ref_volt = 1.8
 
     # ファイル名の指定
     base_dir = os.path.expanduser('./')
-#    base_dir = os.path.expanduser('~/.xschem/simulations/')
-    input_file_pattern = os.path.join(base_dir, 'tran_sar_adc_1loop_out_typ_BITNUM_{}.txt')
-#    input_file_pattern = os.path.join(base_dir, 'tran_sar_adc_out_typ_BITNUM_{}.txt')
-    combined_txt_file = 'tran_sar_adc_out_combined.txt'
+    #input_file = os.path.join(base_dir, 'tran_sar_adc_out_typ.txt')
+    input_file = os.path.join(base_dir, 'sar_adc_tran_out_typ.txt')
     csv_file = 'tran_sar_adc_out_typ.csv'
     adc_result_file = 'tran_sar_adc_vin_vout_result.csv'
     png_file = 'tran_sar_adc_vin_vout_result.png'
     
-    # 1. 0～63までのファイルを順次読み込み、一つのファイルに結合する
-    with open(combined_txt_file, 'w', encoding='utf-8') as outfile:
-        for i in range(64):
-            # 定義したパターンに数値を代入
-            input_file_SP = input_file_pattern.format(i)
-            
-            if os.path.exists(input_file_SP):
-                with open(input_file_SP, 'r', encoding='utf-8') as infile:
-                    outfile.write(infile.read())
-                    outfile.write('\n')
-            else:
-                print(f"警告: {input_file_SP} が見つかりませんでした。スキップします。")
-    print(f"全64ファイル（BITNUM_0～63）の結合とCSV変換が完了しました。")
-
-    # 2. 結合したファイルをCSVに変換
-    convert_txt_to_csv(combined_txt_file, csv_file)
-
-    # 3. CSVファイルをPNGに変換
+    convert_txt_to_csv(input_file, csv_file)
     convert_csv_to_png(ref_volt, csv_file, adc_result_file, png_file)
 

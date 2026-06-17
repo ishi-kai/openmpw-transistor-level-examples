@@ -14,6 +14,8 @@ SAR-ADCの設計手法の一つを解説した資料です。
 ![回路図：CDAC回路](./images/CDAC_cir.png)
 ![回路図：トランスミッションゲート回路](./images/SW_cir.png)
 ![回路図：全体回路](./images/sar-adc_cir.png)
+![動作結果：入力電圧（Vin）とADC結果電圧（ADC Volt）](./images/tran_sar_adc_vin_vout_result.png)
+    - [CSVデータ](./images/tran_sar_adc_vin_vout_result.csv)
 
 
 ### 各種バージョン

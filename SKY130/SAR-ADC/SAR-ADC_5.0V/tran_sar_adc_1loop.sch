@@ -307,7 +307,7 @@ C {devices/lab_pin.sym} 3380 -1190 2 0 {name=p20 sig_type=std_logic lab=COMP_CLK
 C {devices/gnd.sym} 1440 -1140 0 1 {name=l19 lab=GND}
 C {devices/lab_pin.sym} 910 -300 2 1 {name=p25 sig_type=std_logic lab=VIN}
 C {devices/gnd.sym} 910 -200 0 0 {name=l22 lab=GND}
-C {devices/vsource.sym} 910 -230 0 0 {name=Vin value=2 savecurrent=false}
+C {devices/vsource.sym} 910 -230 0 0 {name=Vin value=0.1 savecurrent=false}
 C {devices/lab_pin.sym} 1440 -1200 0 0 {name=p26 sig_type=std_logic lab=VIN}
 C {devices/lab_pin.sym} 2010 -1200 0 0 {name=p27 sig_type=std_logic lab=VOUTN}
 C {devices/lab_pin.sym} 2010 -1260 2 1 {name=p28 sig_type=std_logic lab=VOUTP}

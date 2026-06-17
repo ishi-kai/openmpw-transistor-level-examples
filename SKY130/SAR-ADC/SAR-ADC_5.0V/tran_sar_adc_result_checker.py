@@ -34,7 +34,7 @@ def convert_csv_to_png(ref_volt, input_filename, output_filename, png_filename):
 		div_num = 1
 		cal_data = 0
 		for vout_bit_cnt in range(1 , len(volt_list)):
-			vout_volt_bit = 1 if volt_list[0] < volt_list[vout_bit_cnt] else 0
+			vout_volt_bit = 1 if 0.5 > volt_list[vout_bit_cnt] else 0
 			div_num = div_num * 2
 
 			cal_data = cal_data + (vout_volt_bit/div_num)
@@ -42,10 +42,11 @@ def convert_csv_to_png(ref_volt, input_filename, output_filename, png_filename):
 
 
 		result_list[vin_cnt]
-		print("vin=" + str(volt_list[0]) + " adc=" + str(cal_data * ref_volt))
-		bits_file_d.write(str(volt_list[0]) + "," + str(cal_data * ref_volt) + "\n")
+		adc_volt = ref_volt - (cal_data * ref_volt)
+		print("vin=" + str(volt_list[0]) + " adc=" + str(adc_volt))
+		bits_file_d.write(str(volt_list[0]) + "," + str(adc_volt) + "\n")
 		res_vin_volt_plot.append(volt_list[0])
-		res_ref_volt_plot.append(cal_data * ref_volt)
+		res_ref_volt_plot.append(adc_volt)
 		res_cnt.append(vin_cnt)
 
 	plt.plot(res_cnt, res_vin_volt_plot, color = 'green', marker = 'x', linestyle = '-.', label = 'Vin')
