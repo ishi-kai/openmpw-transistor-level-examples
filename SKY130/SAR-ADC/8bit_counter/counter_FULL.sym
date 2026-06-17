@@ -1,0 +1,56 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {type=primitive
+format="@name @@VGND @@VPWR @@clk @@DIGITAL_OUT[0] @@DIGITAL_OUT[1] @@DIGITAL_OUT[2] @@DIGITAL_OUT[3] @@DIGITAL_OUT[4] @@DIGITAL_OUT[5] @@DIGITAL_OUT[6] @@DIGITAL_OUT[7] @@ena @@rst_n @prefix"
+template="name=x1 prefix=counter"
+extra="prefix"
+highlight=true}
+V {}
+S {}
+F {}
+E {}
+L 4 -190 -90 190 -90 {}
+L 4 -190 70 190 70 {}
+L 4 -190 -90 -190 70 {}
+L 4 190 -90 190 70 {}
+L 4 -210 -50 -190 -50 {}
+L 4 -30 -110 -30 -90 {}
+L 4 -210 -30 -190 -30 {}
+L 4 -210 -10 -190 -10 {}
+L 4 -210 10 -190 10 {}
+L 4 -210 50 -190 50 {}
+L 4 -10 -110 -10 -90 {}
+L 4 10 -110 10 -90 {}
+L 4 30 -110 30 -90 {}
+L 4 50 -110 50 -90 {}
+L 4 70 -110 70 -90 {}
+L 4 -70 -110 -70 -90 {}
+L 4 -50 -110 -50 -90 {}
+B 5 -212.5 -52.5 -207.5 -47.5 {name=VPWR dir=in}
+B 5 -32.5 -112.5 -27.5 -107.5 {name=DIGITAL_OUT[5] dir=out}
+B 5 -212.5 -32.5 -207.5 -27.5 {name=VGND dir=in}
+B 5 -212.5 -12.5 -207.5 -7.5 {name=rst_n dir=in}
+B 5 -212.5 7.5 -207.5 12.5 {name=clk dir=in}
+B 5 -212.5 47.5 -207.5 52.5 {name=ena dir=in}
+B 5 -12.5 -112.5 -7.5 -107.5 {name=DIGITAL_OUT[4] dir=out}
+B 5 7.5 -112.5 12.5 -107.5 {name=DIGITAL_OUT[3] dir=out}
+B 5 27.5 -112.5 32.5 -107.5 {name=DIGITAL_OUT[2] dir=out}
+B 5 47.5 -112.5 52.5 -107.5 {name=DIGITAL_OUT[1] dir=out}
+B 5 67.5 -112.5 72.5 -107.5 {name=DIGITAL_OUT[0] dir=out}
+B 5 -72.5 -112.5 -67.5 -107.5 {name=DIGITAL_OUT[7] dir=out}
+B 5 -52.5 -112.5 -47.5 -107.5 {name=DIGITAL_OUT[6] dir=out}
+T {@symname} -189 -116 0 0 0.3 0.3 {}
+T {@name} 135 -112 0 0 0.2 0.2 {}
+T {VPWR} -185 -54 0 0 0.2 0.2 {}
+T {DIGITAL_OUT[5]} -34 -85 3 1 0.2 0.2 {}
+T {VGND} -185 -34 0 0 0.2 0.2 {}
+T {rst_n} -185 -14 0 0 0.2 0.2 {}
+T {clk} -185 6 0 0 0.2 0.2 {}
+T {ena} -185 46 0 0 0.2 0.2 {}
+T {DIGITAL_OUT[4]} -14 -85 3 1 0.2 0.2 {}
+T {DIGITAL_OUT[3]} 6 -85 3 1 0.2 0.2 {}
+T {DIGITAL_OUT[2]} 26 -85 3 1 0.2 0.2 {}
+T {DIGITAL_OUT[1]} 46 -85 3 1 0.2 0.2 {}
+T {DIGITAL_OUT[0]} 66 -85 3 1 0.2 0.2 {}
+T {DIGITAL_OUT[7]} -74 -85 3 1 0.2 0.2 {}
+T {DIGITAL_OUT[6]} -54 -85 3 1 0.2 0.2 {}
