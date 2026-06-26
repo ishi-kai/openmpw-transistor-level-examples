@@ -161,25 +161,25 @@ N -523960 -1425100 -523960 -1425080 {lab=#net4}
 N -525770 -1424980 -525770 -1424950 {lab=#net4}
 N -523680 -1425360 -523680 -1425100 {lab=VDD}
 N -527000 -1425360 -523680 -1425360 {lab=VDD}
-N -526980 -1424820 -523680 -1424820 {lab=GND}
-N -523680 -1424980 -523680 -1424820 {lab=GND}
-N -523890 -1424980 -523890 -1424820 {lab=GND}
-N -524050 -1425000 -524050 -1424820 {lab=GND}
-N -524180 -1425000 -524180 -1424820 {lab=GND}
-N -524320 -1424980 -524320 -1424820 {lab=GND}
-N -524500 -1425000 -524500 -1424820 {lab=GND}
-N -524720 -1424980 -524720 -1424820 {lab=GND}
-N -524940 -1424980 -524940 -1424820 {lab=GND}
-N -525140 -1424980 -525140 -1424820 {lab=GND}
-N -525300 -1425000 -525300 -1424820 {lab=GND}
+N -526980 -1424820 -523680 -1424820 {lab=gnd}
+N -523680 -1424980 -523680 -1424820 {lab=gnd}
+N -523890 -1424980 -523890 -1424820 {lab=gnd}
+N -524050 -1425000 -524050 -1424820 {lab=gnd}
+N -524180 -1425000 -524180 -1424820 {lab=gnd}
+N -524320 -1424980 -524320 -1424820 {lab=gnd}
+N -524500 -1425000 -524500 -1424820 {lab=gnd}
+N -524720 -1424980 -524720 -1424820 {lab=gnd}
+N -524940 -1424980 -524940 -1424820 {lab=gnd}
+N -525140 -1424980 -525140 -1424820 {lab=gnd}
+N -525300 -1425000 -525300 -1424820 {lab=gnd}
 N -525360 -1425040 -525350 -1425040 {lab=#net5}
-N -526830 -1424970 -526830 -1424820 {lab=GND}
-N -526480 -1424970 -526480 -1424820 {lab=GND}
-N -526250 -1425000 -526250 -1424820 {lab=GND}
-N -526070 -1424980 -526070 -1424820 {lab=GND}
-N -525890 -1424980 -525890 -1424820 {lab=GND}
-N -525690 -1424980 -525690 -1424820 {lab=GND}
-N -525500 -1424980 -525500 -1424820 {lab=GND}
+N -526830 -1424970 -526830 -1424820 {lab=gnd}
+N -526480 -1424970 -526480 -1424820 {lab=gnd}
+N -526250 -1425000 -526250 -1424820 {lab=gnd}
+N -526070 -1424980 -526070 -1424820 {lab=gnd}
+N -525890 -1424980 -525890 -1424820 {lab=gnd}
+N -525690 -1424980 -525690 -1424820 {lab=gnd}
+N -525500 -1424980 -525500 -1424820 {lab=gnd}
 N -526830 -1425360 -526830 -1425090 {lab=VDD}
 N -526480 -1425360 -526480 -1425090 {lab=VDD}
 N -526250 -1425360 -526250 -1425080 {lab=VDD}
@@ -200,13 +200,13 @@ N -524180 -1425360 -524180 -1425080 {lab=VDD}
 N -524050 -1425360 -524050 -1425080 {lab=VDD}
 N -523890 -1425360 -523890 -1425100 {lab=VDD}
 N -527600 -1424840 -527600 -1424800 {
-lab=GND}
+lab=gnd}
 N -527600 -1424930 -527600 -1424900 {
 lab=VDD}
 N -527490 -1424930 -527490 -1424900 {
 lab=vreset}
 N -527490 -1424840 -527490 -1424800 {
-lab=GND}
+lab=gnd}
 N -526310 -1424900 -526310 -1424710 {lab=PC0}
 N -526170 -1424900 -526170 -1424760 {lab=PC1}
 N -526170 -1424760 -523890 -1424760 {lab=PC1}
@@ -216,7 +216,7 @@ N -524230 -1424890 -524230 -1424710 {lab=PC0}
 N -527360 -1424930 -527360 -1424900 {
 lab=vclk}
 N -527360 -1424840 -527360 -1424800 {
-lab=GND}
+lab=gnd}
 N -525970 -1425250 -525970 -1425180 {lab=reg0}
 N -525970 -1425180 -525970 -1425060 {lab=reg0}
 N -525970 -1425060 -525940 -1425060 {lab=reg0}
@@ -233,11 +233,11 @@ N -525400 -1425160 -525200 -1425160 {lab=#net8}
 N -527260 -1424930 -527260 -1424900 {
 lab=von}
 N -527260 -1424840 -527260 -1424800 {
-lab=GND}
+lab=gnd}
 N -527180 -1424930 -527180 -1424900 {
 lab=voff}
 N -527180 -1424840 -527180 -1424800 {
-lab=GND}
+lab=gnd}
 C {DFFR.sym} -526800 -1425030 0 0 {name=x1}
 C {DFFR.sym} -526450 -1425030 0 0 {name=x2}
 C {INV_X1.sym} -526280 -1425040 0 0 {name=x13}
@@ -252,8 +252,6 @@ C {INV_X1.sym} -524530 -1425040 0 0 {name=x15}
 C {INV_X1.sym} -524210 -1425040 0 0 {name=x16}
 C {INV_X1.sym} -524080 -1425040 0 0 {name=x17}
 C {devices/vsource.sym} -527600 -1424870 0 0 {name=Vdd value=5.0 savecurrent=false}
-C {devices/vdd.sym} -527600 -1424930 0 0 {name=l3}
-C {devices/gnd.sym} -527600 -1424800 0 0 {name=l4}
 C {devices/code_shown.sym} -527570 -1425450 0 0 {name=spice only_toplevel=false value=".option savecurrent
 .control
 save all
@@ -266,17 +264,13 @@ wrdata ~/1bit-CPU_1line_tb.txt v(vclk)
 write 1bit-CPU_1line_tb.raw
 .endc"}
 C {devices/lab_pin.sym} -527490 -1424930 1 0 {name=p12 sig_type=std_logic lab=vreset}
-C {devices/gnd.sym} -527490 -1424800 0 0 {name=l2}
 C {devices/lab_pin.sym} -527000 -1425020 2 1 {name=p9 sig_type=std_logic lab=vclk}
 C {devices/lab_pin.sym} -527000 -1424950 2 1 {name=p13 sig_type=std_logic lab=vreset}
 C {devices/lab_pin.sym} -526640 -1424900 1 1 {name=p1 sig_type=std_logic lab=reg0}
 C {devices/lab_pin.sym} -523890 -1424710 1 1 {name=p2 sig_type=std_logic lab=PC0}
 C {devices/lab_pin.sym} -523890 -1424760 1 1 {name=p7 sig_type=std_logic lab=PC1}
-C {devices/gnd.sym} -526980 -1424820 0 0 {name=l6}
-C {devices/vdd.sym} -527000 -1425360 0 0 {name=l7}
 C {devices/vsource.sym} -527490 -1424870 0 0 {name=vreset value="pwl 0 0 10m 0.0 20m 5.0 30m 5.0 40m 0.0" savecurrent=false}
 C {devices/lab_pin.sym} -527360 -1424930 1 0 {name=p4 sig_type=std_logic lab=vclk}
-C {devices/gnd.sym} -527360 -1424800 0 0 {name=l1}
 C {devices/vsource.sym} -527360 -1424870 0 0 {name=vclk value="pwl 0 0 10m 0 20m 5.0 30m 5.0 40m 0 50m 0 60m 5.0 70m 5.0 80m 0 90m 0 100m 5.0 110m 5.0 120m 0 130m 0 140m 5.0 150m 5.0 160m 0 170m 0 180m 5.0 190m 5.0 200m 0 210m 0 220m 5.0 230m 5.0 240m 0 250m 0 260m 5.0 270m 5.0 280m 0 290m 0" savecurrent=false}
 C {NAND2.sym} -526100 -1425040 0 0 {name=x3}
 C {NAND2.sym} -525720 -1425040 0 0 {name=x4}
@@ -284,12 +278,18 @@ C {NAND2.sym} -525530 -1425040 0 0 {name=x5}
 C {NAND2.sym} -525920 -1425040 0 0 {name=x6}
 C {devices/vsource.sym} -527260 -1424870 0 0 {name=von value=5.0 savecurrent=false}
 C {devices/lab_pin.sym} -527260 -1424930 1 0 {name=p8 sig_type=std_logic lab=von}
-C {devices/gnd.sym} -527260 -1424800 0 0 {name=l5}
 C {devices/vsource.sym} -527180 -1424870 0 0 {name=voff value=0.0 savecurrent=false}
 C {devices/lab_pin.sym} -527180 -1424930 1 0 {name=p3 sig_type=std_logic lab=voff}
-C {devices/gnd.sym} -527180 -1424800 0 0 {name=l8}
-C {devices/code.sym} -527590 -1425640 0 0 {name=TR-1um_MODELS
+C {devices/code.sym} -527570 -1425630 0 0 {name=TR-1um_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value=".include $::LIB/ip62_models"
 spice_ignore=false}
+C {devices/vdd.sym} -527000 -1425360 0 0 {name=l9 lab=VDD}
+C {devices/vdd.sym} -527600 -1424930 0 0 {name=l7 lab=VDD}
+C {devices/gnd.sym} -527600 -1424800 0 0 {name=l3 lab=gnd}
+C {devices/gnd.sym} -527490 -1424800 0 0 {name=l1 lab=gnd}
+C {devices/gnd.sym} -527360 -1424800 0 0 {name=l2 lab=gnd}
+C {devices/gnd.sym} -527260 -1424800 0 0 {name=l4 lab=gnd}
+C {devices/gnd.sym} -527180 -1424800 0 0 {name=l5 lab=gnd}
+C {devices/gnd.sym} -526980 -1424820 0 0 {name=l6 lab=gnd}
