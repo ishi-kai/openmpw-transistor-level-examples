@@ -1,0 +1,16 @@
+** sch_path: /mnt/c/Data/OneDrive/MyDocuments/Community/ISHIKAI/github/openmpw-transistor-level-examples/OpenSUSI-TR10/opamp_r2r_audio/opamp_r2r_diff.sch
+.subckt opamp_r2r_diff VDD BPO INP_N INM_N BPI INM INP BNI INM_P INP_P BNO VSS
+*.PININFO VDD:B VSS:B INP:I INM:I INP_N:O INM_N:O INM_P:O INP_P:O BPO:I BPI:I BNI:I BNO:I
+MMINPP1 net1 BPO VDD VDD PMOS w=6u l=4u m=8
+MMINPP2 net2 BPI net1 VDD PMOS w=6u l=4u m=8
+MMINPP3 INP_P INP net2 VDD PMOS w=6u l=4u m=8
+MMINMP1 net3 BPO VDD VDD PMOS w=6u l=4u m=8
+MMINMP2 net2 BPI net3 VDD PMOS w=6u l=4u m=8
+MMINMP3 INM_P INM net2 VDD PMOS w=6u l=4u m=8
+MMINPN2 net4 BNI net5 VSS NMOS w=6u l=4u m=4
+MMINPN1 net5 BNO VSS VSS NMOS w=6u l=4u m=4
+MMINPN3 INP_N INP net4 VSS NMOS w=6u l=4u m=4
+MMINMN2 net4 BNI net6 VSS NMOS w=6u l=4u m=4
+MMINMN1 net6 BNO VSS VSS NMOS w=6u l=4u m=4
+MMINMN3 INM_N INM net4 VSS NMOS w=6u l=4u m=4
+.ends

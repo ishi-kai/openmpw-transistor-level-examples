@@ -1,0 +1,5 @@
+** sch_path: /mnt/c/Data/OneDrive/MyDocuments/Community/ISHIKAI/github/openmpw-transistor-level-examples/OpenSUSI-TR10/opamp_r2r_audio/try_layout.sch
+.subckt try_layout VDD BPO VSS
+*.PININFO VDD:B BPO:I VSS:B
+MMINPP1 VSS BPO VDD VDD PMOS w=6u l=4u m=8
+.ends

@@ -664,30 +664,6 @@ C {MP.sym} 2280 -870 0 0 {name=MSBPP1 model=PMOS w=12u l=8u m=4 as=0 ad=0 ps=0 p
 C {MP.sym} 2520 -1050 0 0 {name=MSBNP1 model=PMOS w=12u l=8u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {MP.sym} 2520 -870 0 0 {name=MSBNP2 model=PMOS w=12u l=8u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {MN.sym} 2520 -330 0 0 {name=MSBNN1 model=NMOS w=12u l=8u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {CSIO.sym} 2720 -650 0 0 {name=XCP1
-model=F_CSIO
-c=2.9963046p
-x=69.8u
-y=69.8u
-m=1}
-C {CSIO.sym} 2650 -650 0 0 {name=XCP2
-model=F_CSIO
-c=2.9963046p
-x=69.8u
-y=69.8u
-m=1}
-C {CSIO.sym} 2720 -530 2 1 {name=XCN1
-model=F_CSIO
-c=2.9963046p
-x=69.8u
-y=69.8u
-m=1}
-C {CSIO.sym} 2650 -530 2 1 {name=XCN2
-model=F_CSIO
-c=2.9963046p
-x=69.8u
-y=69.8u
-m=1}
 C {MP.sym} 2440 -610 3 0 {name=MSBNP3 model=PMOS w=12u l=8u m=16 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {MN.sym} 2440 -570 1 0 {name=MSBPN3 model=NMOS w=12u l=8u m=8 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {MN.sym} 2140 -150 0 0 {name=MSBPDMYN model=NMOS w=12u l=8u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
@@ -715,3 +691,43 @@ C {MP.sym} 1600 -690 0 1 {name=MCSMDMYP model=PMOS w=12u l=8u m=4 as=0 ad=0 ps=0
 C {MP.sym} 2000 -690 0 0 {name=MCSPDMYP model=PMOS w=12u l=8u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {MN.sym} 1600 -510 0 1 {name=MCSMDMYN model=NMOS w=12u l=8u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {MN.sym} 2000 -510 0 0 {name=MCSPDMYN model=NMOS w=12u l=8u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {IP62LIB/CSIO.sym} 2650 -650 0 0 {name=XCP2
+model=F_CSIO
+spiceprefix=X
+c=4.0p
+x=80.6u
+y=80.6u
+c="expr_eng( 0.6e-3 * @x * @y )"
+a="expr_eng( @x * @y )"
+p="expr_eng( 2 * ( @x + @y ) )"
+m=1}
+C {IP62LIB/CSIO.sym} 2720 -650 0 0 {name=XCP1
+model=F_CSIO
+spiceprefix=X
+c=4.0p
+x=80.6u
+y=80.6u
+c="expr_eng( 0.6e-3 * @x * @y )"
+a="expr_eng( @x * @y )"
+p="expr_eng( 2 * ( @x + @y ) )"
+m=1}
+C {IP62LIB/CSIO.sym} 2650 -530 2 1 {name=XCN2
+model=F_CSIO
+spiceprefix=X
+c=4.0p
+x=80.6u
+y=80.6u
+c="expr_eng( 0.6e-3 * @x * @y )"
+a="expr_eng( @x * @y )"
+p="expr_eng( 2 * ( @x + @y ) )"
+m=1}
+C {IP62LIB/CSIO.sym} 2720 -530 2 1 {name=XCN1
+model=F_CSIO
+spiceprefix=X
+c=4.0p
+x=80.6u
+y=80.6u
+c="expr_eng( 0.6e-3 * @x * @y )"
+a="expr_eng( @x * @y )"
+p="expr_eng( 2 * ( @x + @y ) )"
+m=1}
