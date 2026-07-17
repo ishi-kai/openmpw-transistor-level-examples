@@ -1,6 +1,7 @@
 # Examples of Transistor-Level Simulation for OpenMPW
 SPDX-License-Identifier: Apache-2.0 
 
+- Copyright 2024-2026 ISHI-KAI ( https://ishi-kai.org/ )
 - Copyright 2023 Akira Tsuchiya (atuchiya)
 - Copyright 2024 Mizuki MORI (3zki) 
 - Copyright 2026 MOSバーガー (カニテツ) 
