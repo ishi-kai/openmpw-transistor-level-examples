@@ -90,7 +90,7 @@ value="
 .lib $::SKYWATER_MODELS/sky130.lib.spice tt
 "
 spice_ignore=false}
-C {sar_adc_pex.sym} 1420 -940 0 0 {name=x1 prefix=TOP}
+C {sar_adc_pex.sym} 1420 -940 0 0 {name=XM1 prefix=TOP}
 C {devices/lab_pin.sym} 1230 -1000 0 0 {name=p1 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 1230 -960 0 0 {name=p3 sig_type=std_logic lab=VDPWR}
 C {devices/lab_pin.sym} 1230 -980 0 0 {name=p4 sig_type=std_logic lab=VAPWR}

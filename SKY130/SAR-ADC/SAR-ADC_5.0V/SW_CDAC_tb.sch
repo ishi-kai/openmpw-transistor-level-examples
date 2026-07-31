@@ -61,9 +61,9 @@ value=1.8}
 C {devices/lab_pin.sym} 230 -390 0 0 {name=p45 sig_type=std_logic lab=VDPWR}
 C {devices/lab_pin.sym} 560 -670 2 1 {name=p47 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 130 -390 0 0 {name=p48 sig_type=std_logic lab=VREF}
-C {SW_CDAC.sym} 800 -500 0 0 {name=M1
+C {SW_CDAC.sym} 800 -500 0 0 {name=XM1
 spiceprefix=X}
-C {LV_SHIF_D2A.sym} 610 -440 0 0 {name=M2
+C {LV_SHIF_D2A.sym} 610 -440 0 0 {name=XM2
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 1140 -480 2 0 {name=p75 sig_type=std_logic lab=VOUT}

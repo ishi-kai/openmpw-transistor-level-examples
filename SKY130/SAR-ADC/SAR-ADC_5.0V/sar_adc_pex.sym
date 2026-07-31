@@ -2,7 +2,7 @@ v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {type=primitive
 format="@name @@VDD @@XRST @@VIN @@CLK @@ @@VSS @@DIGITAL_OUT[0] @@DIGITAL_OUT[1] @@DIGITAL_OUT[2] @@DIGITAL_OUT[3] @@DIGITAL_OUT[4] @@DIGITAL_OUT[5] @@EOC @prefix"
-template="name=x1 prefix=TOP"
+template="name=XM1 prefix=TOP"
 extra="prefix"
 highlight=true}
 V {}

@@ -205,7 +205,7 @@ model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 490 -20 0 0 {name=M9
-W=16
+W=8
 L=0.5
 nf=1
 mult=1
@@ -219,7 +219,7 @@ model=nfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 490 -130 0 0 {name=M10
-W=40
+W=20
 L=0.5
 nf=1
 mult=1
@@ -233,7 +233,7 @@ model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 630 -20 0 0 {name=M11
-W=16
+W=8
 L=0.5
 nf=1
 mult=1
@@ -247,7 +247,7 @@ model=nfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 630 -130 0 0 {name=M12
-W=40
+W=20
 L=0.5
 nf=1
 mult=1

@@ -97,7 +97,7 @@ value="
 .lib $::SKYWATER_MODELS/sky130.lib.spice tt
 "
 spice_ignore=false}
-C {SAR_LOGIC.sym} 680 150 0 0 {name=x1 prefix=SAR_LOGIC}
+C {SAR_LOGIC.sym} 680 150 0 0 {name=XM1 prefix=SAR_LOGIC}
 C {devices/simulator_commands_shown.sym} -830 40 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 

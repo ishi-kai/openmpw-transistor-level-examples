@@ -312,11 +312,6 @@ C {devices/gnd.sym} 3040 -460 0 1 {name=l11 lab=GND}
 C {devices/gnd.sym} 2740 -920 0 1 {name=l16 lab=GND}
 C {devices/gnd.sym} 1680 -860 0 1 {name=l18 lab=GND}
 C {devices/gnd.sym} 2120 -880 0 1 {name=l19 lab=GND}
-C {devices/capa.sym} 2500 -910 0 0 {name=Cxx0
-m=1
-value=10f
-footprint=1206
-device="ceramic capacitor"}
 C {devices/gnd.sym} 2500 -880 0 1 {name=l20 lab=GND}
 C {devices/lab_pin.sym} 1520 -880 0 0 {name=p26 sig_type=std_logic lab=VIN}
 C {devices/lab_pin.sym} 2100 -880 0 0 {name=p27 sig_type=std_logic lab=VOUTN}
@@ -339,29 +334,29 @@ C {devices/lab_pin.sym} 2900 -1060 0 0 {name=p41 sig_type=std_logic lab=DIGITAL_
 C {devices/lab_pin.sym} 2900 -1040 0 0 {name=p42 sig_type=std_logic lab=DIGITAL_OUT[1]}
 C {devices/lab_pin.sym} 2900 -1020 0 0 {name=p43 sig_type=std_logic lab=DIGITAL_OUT[0]}
 C {devices/lab_pin.sym} 3040 -1020 2 0 {name=p17 sig_type=std_logic lab=EOC}
-C {comp.sym} 1830 -900 0 0 {name=M1
+C {comp.sym} 1830 -900 0 0 {name=XM1
 spiceprefix=X}
-C {SR.sym} 2270 -910 0 0 {name=M2
+C {SR.sym} 2270 -910 0 0 {name=XM2
 spiceprefix=X
 }
-C {SAR_LOGIC.sym} 2950 -890 0 0 {name=x1 prefix=SAR_LOGIC}
-C {cap_array.sym} 1330 -290 0 0 {name=M3
+C {SAR_LOGIC.sym} 2950 -890 0 0 {name=XM12 prefix=SAR_LOGIC}
+C {cap_array.sym} 1330 -290 0 0 {name=XM3
 spiceprefix=X}
-C {SW_CDAC.sym} 1480 -520 0 1 {name=M4
+C {SW_CDAC.sym} 1480 -520 0 1 {name=XM4
 spiceprefix=X}
-C {SW_CDAC.sym} 1720 -520 0 1 {name=M5
+C {SW_CDAC.sym} 1720 -520 0 1 {name=XM5
 spiceprefix=X}
-C {SW_CDAC.sym} 1940 -520 0 1 {name=M6
+C {SW_CDAC.sym} 1940 -520 0 1 {name=XM6
 spiceprefix=X}
-C {SW_CDAC.sym} 2160 -520 0 1 {name=M7
+C {SW_CDAC.sym} 2160 -520 0 1 {name=XM7
 spiceprefix=X}
-C {SW_CDAC.sym} 2380 -520 0 1 {name=M8
+C {SW_CDAC.sym} 2380 -520 0 1 {name=XM8
 spiceprefix=X}
 C {SW_CDAC.sym} 2600 -520 0 1 {name=M9
 spiceprefix=X}
-C {SW_CDAC.sym} 2820 -520 0 1 {name=M10
+C {SW_CDAC.sym} 2820 -520 0 1 {name=XM10
 spiceprefix=X}
-C {SW_CDAC.sym} 3040 -520 0 1 {name=M11
+C {SW_CDAC.sym} 3040 -520 0 1 {name=XM11
 spiceprefix=X}
 C {devices/lab_pin.sym} 1520 -980 2 1 {name=p1 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 3040 -480 2 0 {name=p3 sig_type=std_logic lab=VREF}
@@ -372,3 +367,8 @@ C {devices/lab_pin.sym} 2160 -480 2 0 {name=p22 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 1940 -480 2 0 {name=p23 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 1720 -480 2 0 {name=p24 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 1480 -480 2 0 {name=p44 sig_type=std_logic lab=VREF}
+C {devices/capa.sym} 2500 -910 0 0 {name=C1
+m=1
+value=20f
+footprint=1206
+device="ceramic capacitor"}

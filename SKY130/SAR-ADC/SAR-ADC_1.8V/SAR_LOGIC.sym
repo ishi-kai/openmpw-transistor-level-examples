@@ -2,7 +2,7 @@ v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {type=primitive
 format="@name @@CLK @@COMP_CLK @@COMP_OUT @@DIGITAL_OUT[0] @@DIGITAL_OUT[1] @@DIGITAL_OUT[2] @@DIGITAL_OUT[3] @@DIGITAL_OUT[4] @@DIGITAL_OUT[5] @@EOC @@SC @@SDAC[0] @@SDAC[1] @@SDAC[2] @@SDAC[3] @@SDAC[4] @@SDAC[5] @@SDAC[6] @@VGND @@VPWR @@XRST @prefix"
-template="name=x1 prefix=SAR_LOGIC"
+template="name=XM1 prefix=SAR_LOGIC"
 extra="prefix"
 highlight=true
 }

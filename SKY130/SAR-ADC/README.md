@@ -18,6 +18,16 @@ SAR-ADCの設計手法の一つを解説した資料です。
     - [CSVデータ](./images/tran_sar_adc_vin_vout_result.csv)
 
 
+### サンプルレイアウト
+わざとバラツキが最大になるようにレイアウトしたサンプルです。  
+実際にTinyTapeout(sky130)で製造して、どのくらいばらつくのかを測定予定です。  
+チャレンジする方は、これに対してどのくらいばらつきなくレイアウトできるか、チャレンジしてみてください。  
+
+![レイアウト：全体回路](./images/sar-adc_layout.png)
+
+- [TinyTapeoutに投稿したリポジトリ](https://github.com/ishi-kai/ttsky26c-tt_um_ISHIKAI_SARADC/)
+
+
 ### 各種バージョン
 - [1.8Vのみ対応SAR-ADC](./SAR-ADC_1.8V/)
 - [1.8-5.0V可変対応SAR-ADC](./SAR-ADC_5.0V/)

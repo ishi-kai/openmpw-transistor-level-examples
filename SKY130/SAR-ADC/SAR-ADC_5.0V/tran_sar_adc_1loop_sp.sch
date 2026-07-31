@@ -351,58 +351,59 @@ C {devices/lab_pin.sym} 2400 -460 2 0 {name=p8 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 2620 -460 2 0 {name=p22 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 2840 -460 2 0 {name=p23 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 3060 -460 2 0 {name=p24 sig_type=std_logic lab=VREF}
-C {SR.sym} 2190 -1230 0 0 {name=M2
+C {SR.sym} 2190 -1230 0 0 {name=XM2
 spiceprefix=X
 }
-C {SAR_LOGIC.sym} 2970 -1210 0 0 {name=x1 prefix=SAR_LOGIC}
-C {SW_CDAC.sym} 1500 -500 0 1 {name=M4
+C {SAR_LOGIC.sym} 2970 -1210 0 0 {name=XM1 prefix=SAR_LOGIC}
+C {SW_CDAC.sym} 1500 -500 0 1 {name=XM4
 spiceprefix=X}
-C {SW_CDAC.sym} 1740 -500 0 1 {name=M5
+C {SW_CDAC.sym} 1740 -500 0 1 {name=XM5
 spiceprefix=X}
-C {SW_CDAC.sym} 1960 -500 0 1 {name=M6
+C {SW_CDAC.sym} 1960 -500 0 1 {name=XM6
 spiceprefix=X}
-C {SW_CDAC.sym} 2180 -500 0 1 {name=M7
+C {SW_CDAC.sym} 2180 -500 0 1 {name=XM7
 spiceprefix=X}
-C {SW_CDAC.sym} 2400 -500 0 1 {name=M8
+C {SW_CDAC.sym} 2400 -500 0 1 {name=XM8
 spiceprefix=X}
-C {SW_CDAC.sym} 2620 -500 0 1 {name=M9
+C {SW_CDAC.sym} 2620 -500 0 1 {name=XM9
 spiceprefix=X}
-C {SW_CDAC.sym} 2840 -500 0 1 {name=M10
+C {SW_CDAC.sym} 2840 -500 0 1 {name=XM10
 spiceprefix=X}
-C {SW_CDAC.sym} 3060 -500 0 1 {name=M11
+C {SW_CDAC.sym} 3060 -500 0 1 {name=XM11
 spiceprefix=X}
-C {comp.sym} 1750 -1220 0 0 {name=M1
+C {comp.sym} 1750 -1220 0 0 {name=XM3
 spiceprefix=X}
 C {devices/lab_pin.sym} 3260 -540 2 0 {name=p46 sig_type=std_logic lab=VREF}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 2420 -1230 0 0 {name=C1 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
-C {LV_SHIF_D2A.sym} 3360 -1100 0 0 {name=M12
+C {LV_SHIF_D2A.sym} 3360 -1100 0 0 {name=XM12
 spiceprefix=X
 }
-C {LV_SHIF_D2A.sym} 1440 -720 1 0 {name=M13
+C {LV_SHIF_D2A.sym} 1440 -720 1 0 {name=XM13
 spiceprefix=X
 }
-C {LV_SHIF_D2A.sym} 1680 -720 1 0 {name=M14
+C {LV_SHIF_D2A.sym} 1680 -720 1 0 {name=XM14
 spiceprefix=X
 }
-C {LV_SHIF_D2A.sym} 1900 -720 1 0 {name=M15
+C {LV_SHIF_D2A.sym} 1900 -720 1 0 {name=XM15
 spiceprefix=X
 }
-C {LV_SHIF_D2A.sym} 2120 -720 1 0 {name=M16
+C {LV_SHIF_D2A.sym} 2120 -720 1 0 {name=XM16
 spiceprefix=X
 }
-C {LV_SHIF_D2A.sym} 2340 -720 1 0 {name=M17
+C {LV_SHIF_D2A.sym} 2340 -720 1 0 {name=XM17
 spiceprefix=X
 }
-C {LV_SHIF_D2A.sym} 2560 -720 1 0 {name=M18
+C {LV_SHIF_D2A.sym} 2560 -720 1 0 {name=XM18
 spiceprefix=X
 }
-C {LV_SHIF_D2A.sym} 2780 -720 1 0 {name=M19
+C {LV_SHIF_D2A.sym} 2780 -720 1 0 {name=XM19
 spiceprefix=X
 }
-C {LV_SHIF_D2A.sym} 3000 -720 1 0 {name=M20
+C {LV_SHIF_D2A.sym} 3000 -720 1 0 {name=XM20
 spiceprefix=X
 }
-C {LV_SHIF_A2D.sym} 2630 -1160 0 0 {name=x2}
+C {LV_SHIF_A2D.sym} 2630 -1160 0 0 {name=XM21
+spiceprefix=X
+}
 C {devices/lab_pin.sym} 2760 -1310 0 0 {name=p61 sig_type=std_logic lab=VDPWR}
 C {devices/lab_pin.sym} 2580 -1330 3 1 {name=p62 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 3290 -1260 3 1 {name=p63 sig_type=std_logic lab=VDPWR}
@@ -454,7 +455,12 @@ C {devices/lab_pin.sym} 2400 -610 0 0 {name=p54 sig_type=std_logic lab=LVSDAC3}
 C {devices/lab_pin.sym} 2620 -610 0 0 {name=p55 sig_type=std_logic lab=LVSDAC2}
 C {devices/lab_pin.sym} 2840 -610 0 0 {name=p56 sig_type=std_logic lab=LVSDAC1}
 C {devices/lab_pin.sym} 3060 -610 0 0 {name=p57 sig_type=std_logic lab=LVSDAC0}
-C {cap_array_MF.sym} 1350 -270 0 0 {name=M3
+C {cap_array_MF.sym} 1350 -270 0 0 {name=XM22
 spiceprefix=X}
 C {devices/vsource.sym} 430 -240 0 0 {name=VPLL value="pulse(0 1.8 0 1n 1n 400n 800n)" savecurrent=false}
 C {devices/vsource.sym} 690 -240 0 0 {name=V3 value="pwl(0 0 100n 0 200n 1.8 200n 1.8)" savecurrent=false}
+C {devices/capa.sym} 2420 -1230 0 0 {name=C1
+m=1
+value=20f
+footprint=1206
+device="ceramic capacitor"}

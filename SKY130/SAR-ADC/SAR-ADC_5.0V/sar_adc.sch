@@ -140,7 +140,6 @@ N 2040 -1310 2040 -1260 {lab=VREF}
 N 1600 -1310 1600 -1260 {lab=VREF}
 N 1590 -1140 2590 -1140 {lab=VSS}
 N 2690 -1240 2760 -1240 {lab=VSS}
-N 2420 -1200 2420 -1140 {lab=VSS}
 N 2040 -1200 2040 -1140 {lab=VSS}
 N 1600 -1180 1600 -1140 {lab=VSS}
 N 1520 -420 3060 -420 {lab=VSS}
@@ -218,6 +217,9 @@ N 2680 -480 2680 -300 {lab=#net4}
 N 2460 -480 2460 -280 {lab=#net5}
 N 2240 -480 2240 -260 {lab=#net6}
 N 2840 -440 2840 -420 {lab=VSS}
+N 2420 -1260 2430 -1260 {lab=#net21}
+N 2430 -1200 2430 -1140 {lab=VSS}
+N 2390 -1210 2390 -1140 {lab=VSS}
 C {devices/lab_pin.sym} 1500 -460 2 0 {name=p1 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 1740 -460 2 0 {name=p3 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 1960 -460 2 0 {name=p4 sig_type=std_logic lab=VREF}
@@ -226,30 +228,30 @@ C {devices/lab_pin.sym} 2400 -460 2 0 {name=p8 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 2620 -460 2 0 {name=p22 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 2840 -460 2 0 {name=p23 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 3060 -460 2 0 {name=p24 sig_type=std_logic lab=VREF}
-C {SR.sym} 2190 -1230 0 0 {name=M2
+C {SR.sym} 2190 -1230 0 0 {name=XM1
 spiceprefix=X
 }
-C {SAR_LOGIC.sym} 2970 -1210 0 0 {name=x1 prefix=SAR_LOGIC}
-C {SW_CDAC.sym} 1500 -500 0 1 {name=M4
+C {SAR_LOGIC.sym} 2970 -1210 0 0 {name=XM2 prefix=SAR_LOGIC}
+C {SW_CDAC.sym} 1500 -500 0 1 {name=XM4
 spiceprefix=X}
-C {SW_CDAC.sym} 1740 -500 0 1 {name=M5
+C {SW_CDAC.sym} 1740 -500 0 1 {name=XM5
 spiceprefix=X}
-C {SW_CDAC.sym} 1960 -500 0 1 {name=M6
+C {SW_CDAC.sym} 1960 -500 0 1 {name=XM6
 spiceprefix=X}
-C {SW_CDAC.sym} 2180 -500 0 1 {name=M7
+C {SW_CDAC.sym} 2180 -500 0 1 {name=XM7
 spiceprefix=X}
-C {SW_CDAC.sym} 2400 -500 0 1 {name=M8
+C {SW_CDAC.sym} 2400 -500 0 1 {name=XM8
 spiceprefix=X}
-C {SW_CDAC.sym} 2620 -500 0 1 {name=M9
+C {SW_CDAC.sym} 2620 -500 0 1 {name=XM9
 spiceprefix=X}
-C {SW_CDAC.sym} 2840 -500 0 1 {name=M10
+C {SW_CDAC.sym} 2840 -500 0 1 {name=XM10
 spiceprefix=X}
-C {SW_CDAC.sym} 3060 -500 0 1 {name=M11
+C {SW_CDAC.sym} 3060 -500 0 1 {name=XM11
 spiceprefix=X}
 C {devices/iopin.sym} 1440 -1310 0 1 {name=p2 lab=VREF}
 C {devices/iopin.sym} 1440 -1140 0 1 {name=p9 lab=VSS}
 C {devices/lab_wire.sym} 3060 -420 2 0 {name=p10 sig_type=std_logic lab=VSS}
-C {comp.sym} 1750 -1220 0 0 {name=M1
+C {comp.sym} 1750 -1220 0 0 {name=XM3
 spiceprefix=X}
 C {devices/lab_pin.sym} 3260 -540 2 0 {name=p11 sig_type=std_logic lab=VREF}
 C {devices/ipin.sym} 1440 -1200 0 0 {name=p12 lab=VIN}
@@ -262,36 +264,37 @@ C {devices/opin.sym} 3000 -1510 3 0 {name=p16 lab=DIGITAL_OUT[2]}
 C {devices/opin.sym} 3020 -1510 3 0 {name=p19 lab=DIGITAL_OUT[1]}
 C {devices/opin.sym} 3040 -1510 3 0 {name=p20 lab=DIGITAL_OUT[0]}
 C {devices/opin.sym} 3060 -1510 3 0 {name=p25 lab=EOC}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 2420 -1230 0 0 {name=C1 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
 C {devices/iopin.sym} 2560 -1330 1 1 {name=p17 lab=VDPWR}
-C {LV_SHIF_D2A.sym} 3360 -1100 0 0 {name=M12
+C {LV_SHIF_D2A.sym} 3360 -1100 0 0 {name=XM12
 spiceprefix=X
 }
-C {LV_SHIF_D2A.sym} 1440 -720 1 0 {name=M13
+C {LV_SHIF_D2A.sym} 1440 -720 1 0 {name=XM13
 spiceprefix=X
 }
-C {LV_SHIF_D2A.sym} 1680 -720 1 0 {name=M14
+C {LV_SHIF_D2A.sym} 1680 -720 1 0 {name=XM14
 spiceprefix=X
 }
-C {LV_SHIF_D2A.sym} 1900 -720 1 0 {name=M15
+C {LV_SHIF_D2A.sym} 1900 -720 1 0 {name=XM15
 spiceprefix=X
 }
-C {LV_SHIF_D2A.sym} 2120 -720 1 0 {name=M16
+C {LV_SHIF_D2A.sym} 2120 -720 1 0 {name=XM16
 spiceprefix=X
 }
-C {LV_SHIF_D2A.sym} 2340 -720 1 0 {name=M17
+C {LV_SHIF_D2A.sym} 2340 -720 1 0 {name=XM17
 spiceprefix=X
 }
-C {LV_SHIF_D2A.sym} 2560 -720 1 0 {name=M18
+C {LV_SHIF_D2A.sym} 2560 -720 1 0 {name=XM18
 spiceprefix=X
 }
-C {LV_SHIF_D2A.sym} 2780 -720 1 0 {name=M19
+C {LV_SHIF_D2A.sym} 2780 -720 1 0 {name=XM19
 spiceprefix=X
 }
-C {LV_SHIF_D2A.sym} 3000 -720 1 0 {name=M20
+C {LV_SHIF_D2A.sym} 3000 -720 1 0 {name=XM20
 spiceprefix=X
 }
-C {LV_SHIF_A2D.sym} 2630 -1160 0 0 {name=x2}
+C {LV_SHIF_A2D.sym} 2630 -1160 0 0 {name=XM21
+spiceprefix=X
+}
 C {devices/iopin.sym} 2540 -1330 1 1 {name=p21 lab=VAPWR}
 C {devices/lab_pin.sym} 2760 -1310 0 0 {name=p26 sig_type=std_logic lab=VDPWR}
 C {devices/lab_pin.sym} 2580 -1330 3 1 {name=p27 sig_type=std_logic lab=VREF}
@@ -331,5 +334,6 @@ C {devices/lab_pin.sym} 1800 -810 0 1 {name=p59 sig_type=std_logic lab=VAPWR}
 C {devices/lab_pin.sym} 1560 -770 2 0 {name=p60 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 1560 -790 0 1 {name=p61 sig_type=std_logic lab=VDPWR}
 C {devices/lab_pin.sym} 1560 -810 0 1 {name=p62 sig_type=std_logic lab=VAPWR}
-C {cap_array_var.sym} 1350 -270 0 0 {name=M3
+C {cap_array_var.sym} 1350 -270 0 0 {name=XM22
 spiceprefix=X}
+C {sky130_fd_pr/cap_var_hvt.sym} 2430 -1230 0 0 {name=C1 model=cap_var_hvt W=2 L=2 VM=1 spiceprefix=X}

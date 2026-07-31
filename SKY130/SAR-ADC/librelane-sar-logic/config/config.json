@@ -1,0 +1,12 @@
+{
+  "DESIGN_NAME": "SAR_LOGIC",
+  "VERILOG_FILES": ["dir::../src/SAR_LOGIC.v"],
+  "CLOCK_PERIOD": 25,
+  "CLOCK_PORT": "CLK",
+  "FP_SIZING": "absolute",
+  "RT_MAX_LAYER": "met4",
+  "DIE_AREA": [0, 0, 90, 60 ],
+  "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
+  "STD_CELL_LIBRARY": "sky130_fd_sc_hd"
+}
+

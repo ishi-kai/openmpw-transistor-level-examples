@@ -1,0 +1,11 @@
+{
+  "DESIGN_NAME": "not_logic",
+  "VERILOG_FILES": ["dir::not_logic.v"],
+  "CLOCK_PERIOD": 25,
+  "CLOCK_PORT": "clk",
+  "RT_MAX_LAYER": "met4",
+  "FP_SIZING": "absolute",
+  "DIE_AREA": [0, 0, 50, 100 ],
+  "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
+  "STD_CELL_LIBRARY": "sky130_fd_sc_hd"
+}
