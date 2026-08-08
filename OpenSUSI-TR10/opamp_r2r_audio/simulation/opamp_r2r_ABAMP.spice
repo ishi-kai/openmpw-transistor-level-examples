@@ -1,8 +1,8 @@
 ** sch_path: /mnt/c/Data/OneDrive/MyDocuments/Community/ISHIKAI/github/openmpw-transistor-level-examples/OpenSUSI-TR10/opamp_r2r_audio/opamp_r2r_ABAMP.sch
 .subckt opamp_r2r_ABAMP AB_P CAP_P CAP_N AB_N VDD OUT VSS
 *.PININFO VDD:B VSS:B OUT:O AB_P:I AB_N:I CAP_P:I CAP_N:I
-MMDRVP OUT AB_P VDD VDD PMOS w=6u l=4u m=96
-MMDRVN OUT AB_N VSS VSS NMOS w=6u l=4u m=48
+MMDRVP OUT AB_P VDD VDD PMOS w=7.5u l=5u m=96
+MMDRVN OUT AB_N VSS VSS NMOS w=7.5u l=5u m=48
 XXCP2 CAP_P OUT VSS F_CSIO x=80.6u y=80.6u A=6.496n P=322.4u
 XXCP1 CAP_P OUT VSS F_CSIO x=80.6u y=80.6u A=6.496n P=322.4u
 XXCN2 CAP_N OUT VSS F_CSIO x=80.6u y=80.6u A=6.496n P=322.4u

@@ -589,108 +589,108 @@ N 320 -150 340 -150 {lab=#net18}
 N 340 -360 340 -150 {lab=#net18}
 N 280 -360 340 -360 {lab=#net18}
 N 1560 -1200 1820 -1200 {lab=VDD}
-C {MP.sym} 2760 -690 0 0 {name=MDRVP model=PMOS w=6u l=4u m=96 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 2760 -510 0 0 {name=MDRVN model=NMOS w=6u l=4u m=48 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 180 -1050 0 1 {name=MB4P1 model=PMOS w=6u l=4u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 180 -870 0 1 {name=MB4P2 model=PMOS w=6u l=4u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 40 -1050 0 1 {name=MB3P1 model=PMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 40 -870 0 1 {name=MB3P2 model=PMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 40 -690 0 1 {name=MB3P3 model=PMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 2760 -690 0 0 {name=MDRVP model=PMOS w=7.5u l=5u m=96 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 2760 -510 0 0 {name=MDRVN model=NMOS w=7.5u l=5u m=48 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 180 -1050 0 1 {name=MB4P1 model=PMOS w=7.5u l=5u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 180 -870 0 1 {name=MB4P2 model=PMOS w=7.5u l=5u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 40 -1050 0 1 {name=MB3P1 model=PMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 40 -870 0 1 {name=MB3P2 model=PMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 40 -690 0 1 {name=MB3P3 model=PMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {devices/lab_wire.sym} 720 -1180 0 0 {name=p3 sig_type=std_logic lab=BPO}
 C {devices/lab_wire.sym} 720 -1000 0 0 {name=p1 sig_type=std_logic lab=BPI}
-C {MP.sym} 840 -1050 0 0 {name=MINPP1 model=PMOS w=6u l=4u m=8 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 840 -870 0 0 {name=MINPP2 model=PMOS w=6u l=4u m=8 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 840 -690 0 0 {name=MINPP3 model=PMOS w=6u l=4u m=8 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 840 -1050 0 0 {name=MINPP1 model=PMOS w=7.5u l=5u m=8 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 840 -870 0 0 {name=MINPP2 model=PMOS w=7.5u l=5u m=8 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 840 -690 0 0 {name=MINPP3 model=PMOS w=7.5u l=5u m=8 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {devices/lab_wire.sym} 820 -1050 0 0 {name=p2 sig_type=std_logic lab=BPO}
 C {devices/lab_wire.sym} 820 -870 0 0 {name=p4 sig_type=std_logic lab=BPI}
-C {MP.sym} 1160 -1050 0 1 {name=MINMP1 model=PMOS w=6u l=4u m=8 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 1160 -870 0 1 {name=MINMP2 model=PMOS w=6u l=4u m=8 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 1160 -690 0 1 {name=MINMP3 model=PMOS w=6u l=4u m=8 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 1160 -1050 0 1 {name=MINMP1 model=PMOS w=7.5u l=5u m=8 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 1160 -870 0 1 {name=MINMP2 model=PMOS w=7.5u l=5u m=8 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 1160 -690 0 1 {name=MINMP3 model=PMOS w=7.5u l=5u m=8 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {devices/lab_wire.sym} 1180 -1050 0 1 {name=p5 sig_type=std_logic lab=BPO}
 C {devices/lab_wire.sym} 1180 -870 0 1 {name=p6 sig_type=std_logic lab=BPI}
-C {MN.sym} 180 -330 0 1 {name=MB4N2 model=NMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 40 -330 0 1 {name=MB3N2 model=NMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 180 -150 0 1 {name=MB4N1 model=NMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 40 -150 0 1 {name=MB3N1 model=NMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} -240 -330 0 1 {name=MB1N2 model=NMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} -380 -330 0 1 {name=MB2N2 model=NMOS w=6u l=4u m=1 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} -240 -150 0 1 {name=MB1N1 model=NMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} -380 -150 0 1 {name=MB2N1 model=NMOS w=6u l=4u m=1 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} -380 -510 0 1 {name=MB2N3 model=NMOS w=6u l=4u m=1 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 180 -330 0 1 {name=MB4N2 model=NMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 40 -330 0 1 {name=MB3N2 model=NMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 180 -150 0 1 {name=MB4N1 model=NMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 40 -150 0 1 {name=MB3N1 model=NMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} -240 -330 0 1 {name=MB1N2 model=NMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} -380 -330 0 1 {name=MB2N2 model=NMOS w=7.5u l=5u m=1 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} -240 -150 0 1 {name=MB1N1 model=NMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} -380 -150 0 1 {name=MB2N1 model=NMOS w=7.5u l=5u m=1 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} -380 -510 0 1 {name=MB2N3 model=NMOS w=7.5u l=5u m=1 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {devices/lab_wire.sym} 720 -200 0 0 {name=p8 sig_type=std_logic lab=BNI}
 C {devices/lab_wire.sym} 720 -20 0 0 {name=p9 sig_type=std_logic lab=BNO}
-C {MN.sym} 960 -330 0 0 {name=MINPN2 model=NMOS w=6u l=4u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 960 -150 0 0 {name=MINPN1 model=NMOS w=6u l=4u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 960 -510 0 0 {name=MINPN3 model=NMOS w=6u l=4u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 960 -330 0 0 {name=MINPN2 model=NMOS w=7.5u l=5u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 960 -150 0 0 {name=MINPN1 model=NMOS w=7.5u l=5u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 960 -510 0 0 {name=MINPN3 model=NMOS w=7.5u l=5u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {devices/lab_wire.sym} 940 -330 0 0 {name=p13 sig_type=std_logic lab=BNI}
 C {devices/lab_wire.sym} 940 -150 0 0 {name=p14 sig_type=std_logic lab=BNO}
-C {MP.sym} 320 -1050 0 1 {name=MB5P1 model=PMOS w=6u l=4u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 320 -870 0 1 {name=MB5P2 model=PMOS w=6u l=4u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 320 -330 0 1 {name=MB5N2 model=NMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 320 -150 0 1 {name=MB5N1 model=NMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 320 -510 0 1 {name=MB5N3 model=NMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 320 -1050 0 1 {name=MB5P1 model=PMOS w=7.5u l=5u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 320 -870 0 1 {name=MB5P2 model=PMOS w=7.5u l=5u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 320 -330 0 1 {name=MB5N2 model=NMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 320 -150 0 1 {name=MB5N1 model=NMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 320 -510 0 1 {name=MB5N3 model=NMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {devices/lab_wire.sym} 720 -380 0 0 {name=p12 sig_type=std_logic lab=BNF}
-C {MP.sym} 460 -1050 0 1 {name=MB6P1 model=PMOS w=6u l=4u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 460 -870 0 1 {name=MB6P2 model=PMOS w=6u l=4u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 460 -330 0 1 {name=MB6N2 model=NMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 460 -150 0 1 {name=MB6N1 model=NMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 460 -690 0 1 {name=MB6P3 model=PMOS w=6u l=4u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 460 -1050 0 1 {name=MB6P1 model=PMOS w=7.5u l=5u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 460 -870 0 1 {name=MB6P2 model=PMOS w=7.5u l=5u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 460 -330 0 1 {name=MB6N2 model=NMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 460 -150 0 1 {name=MB6N1 model=NMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 460 -690 0 1 {name=MB6P3 model=PMOS w=7.5u l=5u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {devices/lab_wire.sym} 720 -820 0 0 {name=p15 sig_type=std_logic lab=BPF}
-C {MN.sym} -520 -510 0 1 {name=MB2DMYN model=NMOS w=6u l=4u m=1 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 1360 -330 0 1 {name=MINMN2 model=NMOS w=6u l=4u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 1360 -150 0 1 {name=MINMN1 model=NMOS w=6u l=4u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 1360 -510 0 1 {name=MINMN3 model=NMOS w=6u l=4u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} -520 -510 0 1 {name=MB2DMYN model=NMOS w=7.5u l=5u m=1 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 1360 -330 0 1 {name=MINMN2 model=NMOS w=7.5u l=5u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 1360 -150 0 1 {name=MINMN1 model=NMOS w=7.5u l=5u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 1360 -510 0 1 {name=MINMN3 model=NMOS w=7.5u l=5u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {devices/lab_wire.sym} 1380 -330 0 1 {name=p16 sig_type=std_logic lab=BNI}
 C {devices/lab_wire.sym} 1380 -150 0 1 {name=p17 sig_type=std_logic lab=BNO}
-C {MP.sym} 1720 -1050 0 1 {name=MCSMP1 model=PMOS w=6u l=4u m=16 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 1720 -870 0 1 {name=MCSMP2 model=PMOS w=6u l=4u m=8 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 1720 -690 0 1 {name=MCSMP3 model=PMOS w=6u l=4u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 1880 -1050 0 0 {name=MCSPP1 model=PMOS w=6u l=4u m=16 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 1880 -870 0 0 {name=MCSPP2 model=PMOS w=6u l=4u m=8 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 1880 -690 0 0 {name=MCSPP3 model=PMOS w=6u l=4u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 1720 -1050 0 1 {name=MCSMP1 model=PMOS w=7.5u l=5u m=16 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 1720 -870 0 1 {name=MCSMP2 model=PMOS w=7.5u l=5u m=8 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 1720 -690 0 1 {name=MCSMP3 model=PMOS w=7.5u l=5u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 1880 -1050 0 0 {name=MCSPP1 model=PMOS w=7.5u l=5u m=16 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 1880 -870 0 0 {name=MCSPP2 model=PMOS w=7.5u l=5u m=8 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 1880 -690 0 0 {name=MCSPP3 model=PMOS w=7.5u l=5u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {devices/lab_wire.sym} 1800 -870 0 0 {name=p18 sig_type=std_logic lab=BPI}
 C {devices/lab_wire.sym} 1800 -690 0 0 {name=p19 sig_type=std_logic lab=BPF}
-C {MN.sym} 1720 -330 0 1 {name=MCSMN2 model=NMOS w=6u l=4u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 1720 -150 0 1 {name=MCSMN1 model=NMOS w=6u l=4u m=8 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 1780 -510 0 1 {name=MCSMN3 model=NMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 1820 -510 0 0 {name=MCSPN3 model=NMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 1880 -330 0 0 {name=MCSPN2 model=NMOS w=6u l=4u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 1880 -150 0 0 {name=MCSPN1 model=NMOS w=6u l=4u m=8 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 1720 -330 0 1 {name=MCSMN2 model=NMOS w=7.5u l=5u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 1720 -150 0 1 {name=MCSMN1 model=NMOS w=7.5u l=5u m=8 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 1780 -510 0 1 {name=MCSMN3 model=NMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 1820 -510 0 0 {name=MCSPN3 model=NMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 1880 -330 0 0 {name=MCSPN2 model=NMOS w=7.5u l=5u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 1880 -150 0 0 {name=MCSPN1 model=NMOS w=7.5u l=5u m=8 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {devices/lab_wire.sym} 1800 -330 0 0 {name=p20 sig_type=std_logic lab=BNI}
 C {devices/lab_wire.sym} 1800 -510 0 0 {name=p21 sig_type=std_logic lab=BNF}
-C {MN.sym} 2280 -330 0 0 {name=MSBPN2 model=NMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 2280 -150 0 0 {name=MSBPN1 model=NMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 2280 -870 0 0 {name=MSBPP1 model=PMOS w=6u l=4u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 2520 -1050 0 0 {name=MSBNP1 model=PMOS w=6u l=4u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 2520 -870 0 0 {name=MSBNP2 model=PMOS w=6u l=4u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 2520 -330 0 0 {name=MSBNN1 model=NMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 2440 -610 3 0 {name=MSBNP3 model=PMOS w=6u l=4u m=16 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 2440 -570 1 0 {name=MSBPN3 model=NMOS w=6u l=4u m=8 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 2140 -150 0 0 {name=MSBPDMYN model=NMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 2140 -1050 0 0 {name=MSBNDMYP model=PMOS w=6u l=4u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 2280 -330 0 0 {name=MSBPN2 model=NMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 2280 -150 0 0 {name=MSBPN1 model=NMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 2280 -870 0 0 {name=MSBPP1 model=PMOS w=7.5u l=5u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 2520 -1050 0 0 {name=MSBNP1 model=PMOS w=7.5u l=5u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 2520 -870 0 0 {name=MSBNP2 model=PMOS w=7.5u l=5u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 2520 -330 0 0 {name=MSBNN1 model=NMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 2440 -610 3 0 {name=MSBNP3 model=PMOS w=7.5u l=5u m=16 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 2440 -570 1 0 {name=MSBPN3 model=NMOS w=7.5u l=5u m=8 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 2140 -150 0 0 {name=MSBPDMYN model=NMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 2140 -1050 0 0 {name=MSBNDMYP model=PMOS w=7.5u l=5u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {devices/iopin.sym} -620 -1200 2 0 {name=p22 lab=VDD}
 C {devices/iopin.sym} -620 0 2 0 {name=p23 lab=VSS}
 C {devices/ipin.sym} 800 -510 0 0 {name=p7 lab=INP}
 C {devices/ipin.sym} 1400 -690 0 1 {name=p24 lab=INM}
 C {devices/opin.sym} 2860 -590 0 0 {name=p25 lab=OUT}
-C {MN.sym} -720 -130 0 0 {name=MDMYN1 model=NMOS w=6u l=4u m=22 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} -720 -130 0 0 {name=MDMYN1 model=NMOS w=7.5u l=5u m=22 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {devices/lab_wire.sym} -740 -80 0 0 {name=p26 sig_type=std_logic lab=VSS}
-C {MP.sym} -720 -250 0 0 {name=MDMYP1 model=PMOS w=6u l=4u m=52 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} -720 -250 0 0 {name=MDMYP1 model=PMOS w=7.5u l=5u m=52 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {devices/lab_wire.sym} -740 -300 0 0 {name=p10 sig_type=std_logic lab=VDD}
-C {MP.sym} -380 -890 0 1 {name=MPVB1 model=PMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} -320 -890 0 0 {name=MPVB2 model=PMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} -380 -890 0 1 {name=MPVB1 model=PMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} -320 -890 0 0 {name=MPVB2 model=PMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {devices/ipin.sym} -520 -780 0 0 {name=p11 lab=VB}
-C {MP.sym} -540 -890 0 1 {name=MDMYP2 model=PMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} -540 -890 0 1 {name=MDMYP2 model=PMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {devices/lab_wire.sym} -520 -940 0 1 {name=p27 sig_type=std_logic lab=VDD}
-C {MP.sym} -540 -1050 0 1 {name=MDMYP3 model=PMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} -540 -1050 0 1 {name=MDMYP3 model=PMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {devices/lab_wire.sym} -520 -1100 0 1 {name=p28 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} -580 -1000 0 0 {name=p29 sig_type=std_logic lab=BNI}
 C {devices/lab_wire.sym} -580 -840 0 0 {name=p30 sig_type=std_logic lab=BNO}
-C {MP.sym} -100 -690 0 1 {name=MDMYP4 model=PMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 1600 -690 0 1 {name=MCSMDMYP model=PMOS w=6u l=4u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MP.sym} 2000 -690 0 0 {name=MCSPDMYP model=PMOS w=6u l=4u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 1600 -510 0 1 {name=MCSMDMYN model=NMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 2000 -510 0 0 {name=MCSPDMYN model=NMOS w=6u l=4u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} -100 -690 0 1 {name=MDMYP4 model=PMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 1600 -690 0 1 {name=MCSMDMYP model=PMOS w=7.5u l=5u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 2000 -690 0 0 {name=MCSPDMYP model=PMOS w=7.5u l=5u m=4 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 1600 -510 0 1 {name=MCSMDMYN model=NMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 2000 -510 0 0 {name=MCSPDMYN model=NMOS w=7.5u l=5u m=2 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {IP62LIB/CSIO.sym} 2650 -650 0 0 {name=XCP2
 model=F_CSIO
 spiceprefix=X

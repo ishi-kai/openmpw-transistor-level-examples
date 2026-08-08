@@ -46,8 +46,8 @@ N 2800 -590 2860 -590 {lab=OUT}
 N 2520 -420 2760 -420 {lab=AB_N}
 N 2470 -780 2520 -780 {lab=AB_P}
 N 2480 -420 2520 -420 {lab=AB_N}
-C {MP.sym} 2760 -690 0 0 {name=MDRVP model=PMOS w=6u l=4u m=96 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
-C {MN.sym} 2760 -510 0 0 {name=MDRVN model=NMOS w=6u l=4u m=48 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MP.sym} 2760 -690 0 0 {name=MDRVP model=PMOS w=7.5u l=5u m=96 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
+C {MN.sym} 2760 -510 0 0 {name=MDRVN model=NMOS w=7.5u l=5u m=48 as=0 ad=0 ps=0 pd=0 nrd=0 nrs=0 spiceprefix=X}
 C {devices/iopin.sym} 2680 -1200 2 0 {name=p22 lab=VDD}
 C {devices/iopin.sym} 2560 0 2 0 {name=p23 lab=VSS}
 C {devices/opin.sym} 2860 -590 0 0 {name=p25 lab=OUT}
