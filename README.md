@@ -100,3 +100,4 @@ HDLやロジック回路（デジタル回路）がどのようにGDSに変換�
 - ![基本増幅回路](/images/CMOS_Basic_Circuit.png)
 - ![Id, W/L, gmの関係](/images/ID_WL_GM.png)
 - ![キャラクタライズ数値例](/images/MOSFET_Characterization.png)
+- ![数学公式](/images/CMOS_Formulas.png)
